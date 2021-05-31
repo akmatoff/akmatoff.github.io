@@ -1,11 +1,12 @@
 import '../App.css'
+import './Home.css'
 
 function Home() {
     return(
         <div className="main-container flex-column" id="home">
             
-            <div className="home-text-container">
-                <h1 className="greeting">AZIM AKMATOV</h1>
+            <div className="home-text-container flex-column">
+                <h1 className="greeting">HI, I'M AZIM AKMATOV</h1>
                 <p className="greeting-about">
                     FULL STACK DEVELOPER
                 </p>

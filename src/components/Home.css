@@ -1,0 +1,67 @@
+#home {
+    background: var(--primary-color) url('../assets/images/Portfolio-BG\(TRANSPARENT\).png') no-repeat;
+    background-position-x: 0;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .centered {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .greeting {
+    color: var(--secondary-text-color);
+    font-size: clamp(35px, 5vw, 70px);
+  }
+  
+  .greeting-about {
+    font-weight: 300;
+    font-size: clamp(15px, 2vw, 20px);
+  }
+  
+  .home-text-container {
+    width: clamp(420px, 50%, 800px);
+    padding: 40px;
+    color: var(--secondary-text-color);
+    text-shadow: 3px 3px 8px rgba(1,1,1,0.3);
+  } 
+  
+  .social-links-container {
+    width: 200px;
+    padding: 10px;
+    justify-content: space-around;
+  }
+  
+  .social-icon {
+    font-size: 35px;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .social-icon:hover {
+    color: #d5d5d5;
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+  }
+  
+  @media screen and (max-width: 800px) {
+    #home {
+      background-position: 10% 200px;
+    }
+  
+    .home-text-container {
+      align-items: center;
+      text-align: center;
+    }
+  }

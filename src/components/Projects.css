@@ -1,0 +1,9 @@
+#projects {
+    background-color: var(--secondary-color);
+    height: auto;
+    min-height: 100vh;
+}
+
+.header-title {
+    font-size: clamp(25px, 5vw, 35px);
+}

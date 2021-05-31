@@ -1,0 +1,34 @@
+[
+    {
+        "project_id": "1",
+        "project_title": "History of Kyrgyzstan",
+        "project_type": "Mobile App",
+        "description": "An app about history of Kyrgyzstan that includes book written by O. Dj. Osmonov and history quizes for students.",
+        "technology": "Flutter",
+        "repositories": [
+            "https://github.com/boorsoft/history-book.git"
+        ]
+    },
+    {
+        "project_id": "2",
+        "project_title": "By Students' Eyes",
+        "project_type": "Mobile App",
+        "description": "Every year IUCA students kind of vote for teachers. It is made to improve the quality of education. The app is about making it online.",
+        "technology": "Flutter, Django Rest API",
+        "repositories": [
+            "https://github.com/boorsoft/bseyes-flutter.git",
+            "https://github.com/boorsoft/bseyes-restapi.git"
+        ]
+    },
+    {
+        "project_id": "3",
+        "project_title": "HTC Online Library",
+        "project_type": "Web App",
+        "description": "Website for students and teachers of IUCA to search, read and download books in one place.",
+        "technology": "React, Express",
+        "repositories": [
+            "https://github.com/boorsoft/htc-lib.git",
+            "https://github.com/boorsoft/htc-online-library-express.git"
+        ]
+    }
+]
