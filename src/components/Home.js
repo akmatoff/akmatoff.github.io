@@ -1,25 +1,53 @@
-import '../App.css'
-import './Home.css'
+import { useRef, useEffect } from "react";
+import "../App.css";
+import "./Home.css";
 
 function Home() {
-    return(
-        <div className="main-container flex-column" id="home">
-            
-            <div className="home-text-container flex-column">
-                <h1 className="greeting">HI, I'M AZIM AKMATOV</h1>
-                <p className="greeting-about">
-                    FULL STACK DEVELOPER
-                </p>
+  const homeTextContainer = useRef();
 
-                <div className="social-links-container flex-row">
-                    <a href="https://github.com/akmatoff" target="_blank" rel="noreferrer"><i className="fab fa-github social-icon"></i></a>
-                    <a href="https://t.me/akmatoffexe" target="_blank" rel="noreferrer"><i className="fab fa-telegram-plane social-icon"></i></a>
-                    <a href="mailto: akmatoff.exe@gmail.com"><i className="fas fa-envelope social-icon"></i></a>
-                </div>
-            </div>
+  // Move text container when moving mouse
+  const onMouseMove = (e) => {
+    let x = (window.innerWidth - e.clientX) * 0.06;
+    let y = (window.innerHeight - e.clientY) * 0.06;
 
+    homeTextContainer.current.style.transform = `translateX(${x}px) translateY(${y}px) translateZ(${
+      x * y * 0.5
+    })`;
+  };
+
+  useEffect(() => {
+    window.addEventListener("mousemove", onMouseMove);
+  });
+
+  return (
+    <div className="main-container flex-column" id="home">
+      <div
+        className="home-text-container flex-column centered"
+        ref={homeTextContainer}
+      >
+        <h1 className="greeting">HI, I'M AZIM AKMATOV</h1>
+        <p className="greeting-about">
+          A FULL STACK DEVELOPER BASED IN KYRGYZSTAN
+        </p>
+
+        <div className="social-links-container flex-row centered">
+          <a
+            href="https://github.com/akmatoff"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fab fa-github social-icon"></i>
+          </a>
+          <a href="https://t.me/akmatoffexe" target="_blank" rel="noreferrer">
+            <i className="fab fa-telegram-plane social-icon"></i>
+          </a>
+          <a href="mailto: akmatoff.exe@gmail.com">
+            <i className="fas fa-envelope social-icon"></i>
+          </a>
         </div>
-    )
+      </div>
+    </div>
+  );
 }
 
 export default Home;
