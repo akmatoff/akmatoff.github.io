@@ -1,19 +1,12 @@
 import { useRef, useEffect } from "react";
+import { bgMouseMove } from "../utils/utils";
 import "../App.css";
 import "./Home.css";
 
 function Home() {
   const homeTextContainer = useRef();
 
-  // Move text container when moving mouse
-  const onMouseMove = (e) => {
-    let x = (window.innerWidth - e.clientX) * 0.06;
-    let y = (window.innerHeight - e.clientY) * 0.06;
-
-    homeTextContainer.current.style.transform = `translateX(${x}px) translateY(${y}px) translateZ(${
-      x * y * 0.5
-    })`;
-  };
+  const onMouseMove = (e) => bgMouseMove(e, homeTextContainer);
 
   useEffect(() => {
     window.addEventListener("mousemove", onMouseMove);
@@ -25,7 +18,9 @@ function Home() {
         className="home-text-container flex-column centered"
         ref={homeTextContainer}
       >
-        <h1 className="greeting">HI, I'M AZIM AKMATOV</h1>
+        <h1 className="greeting" data-text="HI, I'M AZIM AKMATOV">
+          HI, I'M AZIM AKMATOV
+        </h1>
         <p className="greeting-about">
           A FULL STACK DEVELOPER BASED IN KYRGYZSTAN
         </p>
