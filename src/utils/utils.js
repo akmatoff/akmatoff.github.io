@@ -7,3 +7,9 @@ export const bgMouseMove = (e, target) => {
     x * 0.01
   }deg)`;
 };
+
+// Move custom cursor
+export const cursorMove = (e, target) => {
+  target.current.style.left = e.clientX + "px";
+  target.current.style.top = e.clientY + "px";
+};
