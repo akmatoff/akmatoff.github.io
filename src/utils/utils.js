@@ -13,3 +13,25 @@ export const cursorMove = (e, target) => {
   target.current.style.left = e.clientX + "px";
   target.current.style.top = e.clientY + "px";
 };
+
+// Smooth scroll
+export const scrollView = (scrollElement) => {
+  let current = 0;
+  let target = 0;
+  let ease = 0.045;
+
+  // Linear interpolation to make it smooth
+  const lerp = (start, end, ease) => {
+    return start * (1 - ease) + end * ease;
+  };
+
+  const smoothScroll = () => {
+    target = window.scrollY;
+    current = lerp(current, target, ease);
+    scrollElement.current.style.transform = `translateY(${-current}px)`;
+
+    requestAnimationFrame(smoothScroll);
+  };
+
+  smoothScroll();
+};
