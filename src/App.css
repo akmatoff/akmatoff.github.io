@@ -3,6 +3,7 @@
 :root {
   --primary-color: #141414;
   --text-color: #cecce0;
+  --highlight-color: #e4e2f5;
 }
 
 * {
@@ -24,25 +25,24 @@ h3 {
   margin: 0;
 }
 
-html,
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y proximity;
+}
+
 body {
   background-color: var(--primary-color);
   color: var(--text-color);
   margin: 0;
   padding: 0;
   font-family: "Rubik", sans-serif;
-  scrollbar-width: none;
-  scroll-behavior: smooth;
+  /* scrollbar-width: none; */
 }
 
-.App {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-}
-
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   display: none;
-}
+} */
 
 .main-container {
   width: 100%;

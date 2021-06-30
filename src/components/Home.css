@@ -9,7 +9,7 @@
   text-shadow: -0.04em 0.021em 0 rgba(255, 0, 0.4),
     0.03em -0.05em 0 rgba(0, 255, 0, 0.4), -0.09em 0.03em 0 rgba(0, 0, 255, 0.4);
 
-  animation: glitch 2s infinite;
+  animation: glitch 1.7s infinite;
 }
 
 .greeting-about {
@@ -36,7 +36,7 @@
 }
 
 .social-icon:hover {
-  color: #d5d5d5;
+  color: var(--highlight-color);
   cursor: pointer;
   transform: scale(1.05, 1.05);
 }

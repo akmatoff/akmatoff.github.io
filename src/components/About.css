@@ -1,8 +1,7 @@
 .text-container {
-  padding: 20px;
-  margin-top: 30px;
+  padding: 10px;
   width: 50%;
-  font-size: clamp(0.8rem, 10vw, 25px);
+  font-size: 1.5rem;
   text-align: justify;
   line-height: 1.6em;
 }
@@ -10,5 +9,6 @@
 @media screen and (max-width: 800px) {
   .text-container {
     width: 100%;
+    font-size: 1.1rem;
   }
 }
