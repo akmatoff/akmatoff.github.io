@@ -13,8 +13,8 @@ function App() {
   const onMouseMove = (e) => cursorMove(e, cursor);
 
   useEffect(() => {
-    window.addEventListener("mousemove", onMouseMove);
     scrollView(scrollViewRef);
+    window.addEventListener("mousemove", onMouseMove);
   });
 
   return (

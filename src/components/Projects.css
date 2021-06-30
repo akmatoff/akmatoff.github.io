@@ -1,4 +1,46 @@
 #projects {
+  width: 100%;
   height: auto;
   min-height: 100vh;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  place-items: center;
+  padding: 30px;
+}
+
+.project-card {
+  width: clamp(400px, 50vw, 500px);
+  padding: 50px;
+  background-color: var(--primary-color);
+  transition: 0.3s ease-in;
+}
+
+.project-card:hover {
+  background-color: var(--highlight-color);
+  color: var(--primary-color);
+}
+
+.title {
+  font-weight: bold;
+  font-size: clamp(1.6rem, 50vw, 2rem);
+}
+
+.type {
+  margin-top: 3px;
+  font-weight: 200;
+  font-size: 1.1rem;
+}
+
+.description {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
 }
