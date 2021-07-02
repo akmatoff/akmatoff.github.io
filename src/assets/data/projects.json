@@ -14,7 +14,7 @@
         "project_title": "By Students' Eyes",
         "project_type": "Mobile App",
         "description": "Every year IUCA students kind of vote for teachers. It is made to improve the quality of education. The app is about making it online.",
-        "technology": "Flutter, Django Rest API",
+        "technology": "Flutter, Django Rest Framework",
         "repositories": [
             "https://github.com/boorsoft/bseyes-flutter.git",
             "https://github.com/boorsoft/bseyes-restapi.git"
@@ -29,6 +29,16 @@
         "repositories": [
             "https://github.com/boorsoft/htc-lib.git",
             "https://github.com/boorsoft/htc-online-library-express.git"
+        ]
+    },
+    {
+        "project_id": "4",
+        "project_title": "ThreeJS Car Driving",
+        "project_type": "Web App",
+        "description": "A webGL app with a drivable car using keyboard implemented using ThreeJS library.",
+        "technology": "ThreeJS",
+        "repositories": [
+            "https://github.com/akmatoff/threejs-car-driving"
         ]
     }
 ]

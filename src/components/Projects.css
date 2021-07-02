@@ -24,6 +24,10 @@
   color: var(--primary-color);
 }
 
+.project-card:hover .project-icon {
+  color: var(--primary-color);
+}
+
 .title {
   font-weight: bold;
   font-size: clamp(1.6rem, 50vw, 2rem);
@@ -35,8 +39,24 @@
   font-size: 1.1rem;
 }
 
+.technology {
+  margin-top: 6px;
+  font-weight: 100;
+  font-size: 0.8rem;
+}
+
 .description {
   margin-top: 20px;
+}
+
+.project-links {
+  height: 50px;
+  padding-top: 20px;
+}
+
+.project-icon {
+  font-size: 30px;
+  margin-right: 15px;
 }
 
 @media screen and (max-width: 1200px) {
