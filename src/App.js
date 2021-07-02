@@ -10,10 +10,10 @@ function App() {
   const cursor = useRef();
   const scrollViewRef = useRef();
 
-  const onMouseMove = (e) => cursorMove(e, cursor);
+  const onMouseMove = (e) => cursorMove(e, cursor.current);
 
   useEffect(() => {
-    scrollView(scrollViewRef);
+    scrollView(scrollViewRef.current);
     window.addEventListener("mousemove", onMouseMove);
   });
 
@@ -22,7 +22,7 @@ function App() {
       <div className="scroll-view" ref={scrollViewRef}>
         <Home />
         <About />
-        <Projects />
+        <Projects cursor={cursor} />
       </div>
       <div className="cursor" ref={cursor}></div>
     </div>

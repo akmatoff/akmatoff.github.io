@@ -5,7 +5,7 @@ import "./About.css";
 
 function About() {
   const aboutContainer = useRef();
-  const onMouseMove = (e) => bgMouseMove(e, aboutContainer);
+  const onMouseMove = (e) => bgMouseMove(e, aboutContainer.current);
 
   useEffect(() => {
     window.addEventListener("mousemove", onMouseMove);

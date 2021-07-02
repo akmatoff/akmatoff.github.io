@@ -6,7 +6,7 @@ import "./Home.css";
 function Home() {
   const homeTextContainer = useRef();
 
-  const onMouseMove = (e) => bgMouseMove(e, homeTextContainer);
+  const onMouseMove = (e) => bgMouseMove(e, homeTextContainer.current);
 
   useEffect(() => {
     window.addEventListener("mousemove", onMouseMove);
