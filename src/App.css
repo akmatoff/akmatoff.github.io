@@ -29,6 +29,7 @@ h3 {
 
 html {
   overflow-x: hidden;
+  overflow-y: scroll;
   cursor: none;
   scroll-behavior: smooth;
 }
@@ -64,7 +65,7 @@ body {
 .main-container {
   width: 100%;
   height: 100vh;
-  padding: 50px;
+  padding: 0px;
   /* scroll-snap-align: center; */
 }
 
@@ -98,3 +99,9 @@ body {
     box-shadow: 0 0 0 rgba(255, 255, 255, 0.9);
   }
 }
+
+/* @media screen and (max-width: 1200) {
+  .main-container {
+    width: 100%;
+  }
+} */

@@ -33,8 +33,6 @@ export const scrollView = (scrollElement) => {
     current = lerp(current, target, ease);
     scrollElement.style.transform = `translateY(${-current}px)`;
 
-    console.log(-current);
-
     requestAnimationFrame(smoothScroll);
   };
 

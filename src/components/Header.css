@@ -1,6 +1,6 @@
 .header {
   position: fixed;
-  width: clamp(350px, 50vw, 500px);
+  width: clamp(350px, 50%, 500px);
   height: 60px;
   font-weight: 300;
   justify-content: space-around;

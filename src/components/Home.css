@@ -19,9 +19,7 @@
 
 .home-text-container {
   text-align: center;
-  width: clamp(420px, 50%, 1000px);
   padding: 40px;
-  /* text-shadow: 3px 3px 8px rgba(1, 1, 1, 0.3); */
 }
 
 .social-links-container {
@@ -90,6 +88,7 @@
 
 @media screen and (max-width: 800px) {
   .home-text-container {
+    width: 100%;
     align-items: center;
     text-align: center;
   }
