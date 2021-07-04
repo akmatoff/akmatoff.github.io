@@ -1,9 +1,24 @@
+import emailjs from "emailjs-com";
 import "./Contact.css";
 
 function Contact() {
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      process.env.REACT_APP_SERVICE_ID,
+      process.env.REACT_APP_TEMPLATE_ID,
+      e.target,
+      process.env.REACT_APP_USER_ID
+    );
+    e.target.reset();
+  };
+
   return (
     <div id="contact" className="main-container flex-column centered">
-      <form id="contactForm" className="flex-column">
+      <h1 className="header-title">Contact</h1>
+
+      <form id="contactForm" className="flex-column" onSubmit={sendEmail}>
         <div className="input-container flex-column">
           <label htmlFor="name">Your name</label>
           <input name="name"></input>
@@ -16,6 +31,7 @@ function Contact() {
           <label htmlFor="message">Message</label>
           <textarea name="message"></textarea>
         </div>
+        <button type="submit">Submit</button>
       </form>
     </div>
   );
