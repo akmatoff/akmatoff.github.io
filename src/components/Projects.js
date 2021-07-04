@@ -1,29 +1,16 @@
 import { useEffect, useRef } from "react";
-import { bgMouseMove, cursorOnHover, cursorOnLeave } from "../utils/utils";
+import { bgMouseMove } from "../utils/utils";
 import "../App.css";
 import "./Projects.css";
 const projects = require("../assets/data/projects.json");
 
-function Projects({ cursor }) {
+function Projects() {
   const projectsContainer = useRef();
-  const projectCard = useRef();
   const onMouseMove = (e) => bgMouseMove(e, projectsContainer.current);
 
   useEffect(() => {
-    projectCard.current.addEventListener(
-      "mouseover",
-      cursorOnHover(cursor.current)
-    );
-    projectCard.current.addEventListener(
-      "mouseleave",
-      cursorOnLeave(cursor.current)
-    );
     window.addEventListener("mousemove", onMouseMove);
-
-    return () => {
-      window.removeEventListener("mousemove");
-    };
-  }, [cursor]);
+  }, []);
 
   return (
     <div
@@ -36,11 +23,7 @@ function Projects({ cursor }) {
       </h1>
       <div className="projects-container">
         {projects.map((project) => (
-          <div
-            key={project.project_id}
-            className="project-card"
-            ref={projectCard}
-          >
+          <div key={project.project_id} className="project-card">
             <div className="title">{project.project_title}</div>
             <div className="type">{project.project_type}</div>
             <div className="technology">{project.technology}</div>

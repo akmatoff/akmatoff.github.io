@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import "./App.css";
 import "./components/Home.css";
 import { cursorMove, scrollView } from "./utils/utils";
+import Header from "./components/Header";
 import Home from "./components/Home";
 import About from "./components/About";
 import Projects from "./components/Projects";
@@ -16,14 +17,15 @@ function App() {
   useEffect(() => {
     scrollView(scrollViewRef.current);
     window.addEventListener("mousemove", onMouseMove);
-  });
+  }, []);
 
   return (
-    <div className="App">
+    <div className="App flex-row">
+      <Header />
       <div className="scroll-view" ref={scrollViewRef}>
         <Home />
         <About />
-        <Projects cursor={cursor} />
+        <Projects />
         <Contact />
       </div>
       <div className="cursor" ref={cursor}></div>

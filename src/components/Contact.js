@@ -1,4 +1,6 @@
+import { useEffect, useRef } from "react";
 import emailjs from "emailjs-com";
+import { bgMouseMove } from "../utils/utils";
 import "./Contact.css";
 
 function Contact() {
@@ -14,8 +16,20 @@ function Contact() {
     e.target.reset();
   };
 
+  const contactRef = useRef();
+
+  const onMouseMove = (e) => bgMouseMove(e, contactRef.current);
+
+  useEffect(() => {
+    window.addEventListener("mousemove", onMouseMove);
+  }, []);
+
   return (
-    <div id="contact" className="main-container flex-column centered">
+    <div
+      ref={contactRef}
+      id="contact"
+      className="main-container flex-column centered"
+    >
       <h1 className="header-title">Contact</h1>
 
       <form id="contactForm" className="flex-column" onSubmit={sendEmail}>

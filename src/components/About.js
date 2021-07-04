@@ -29,6 +29,10 @@ function About() {
         with web development using JavaScript and Mobile Development using
         Flutter.
       </div>
+      <div className="text-container">
+        I'm constantly working on my knowledge and skills to create better apps
+        with intuitive user interfaces and provide better user experience.
+      </div>
     </div>
   );
 }

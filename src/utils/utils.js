@@ -1,11 +1,10 @@
 // Move elements on mouse move
 export const bgMouseMove = (e, target) => {
-  let ease = 0.04;
+  let ease = 0.03;
   let x = (window.innerWidth - e.clientX) * ease;
   let y = (window.innerHeight - e.clientY) * ease;
-
   target.style.transform = `translateX(${x}px) translateY(${y}px) rotateZ(${
-    x * 0.01
+    x * 0.005
   }deg)`;
 };
 
@@ -19,28 +18,24 @@ export const cursorMove = (e, target) => {
 export const scrollView = (scrollElement) => {
   let current = 0;
   let target = 0;
-  let ease = 0.045;
+  let ease = 0.03;
 
   // Linear interpolation to make it smooth
   const lerp = (start, end, ease) => {
     return start * (1 - ease) + end * ease;
   };
 
+  scrollElement.style.height = "100vh";
+
   const smoothScroll = () => {
     target = window.scrollY;
     current = lerp(current, target, ease);
-    scrollElement.transform = `translateY(${-current}px)`;
+    scrollElement.style.transform = `translateY(${-current}px)`;
+
+    console.log(-current);
 
     requestAnimationFrame(smoothScroll);
   };
 
   smoothScroll();
-};
-
-export const cursorOnHover = (cursor) => {
-  cursor.style.borderColor = "#171717";
-};
-
-export const cursorOnLeave = (cursor) => {
-  cursor.style.borderColor = "#d7d5e0";
 };
