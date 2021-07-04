@@ -1,0 +1,23 @@
+#contactForm {
+  padding: 20px;
+  justify-content: space-around;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+.input-container {
+  margin-bottom: 30px;
+}
+
+input,
+textarea {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  height: 50px;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}

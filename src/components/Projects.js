@@ -1,27 +1,29 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { bgMouseMove, cursorOnHover, cursorOnLeave } from "../utils/utils";
 import "../App.css";
 import "./Projects.css";
 const projects = require("../assets/data/projects.json");
 
 function Projects({ cursor }) {
-  const [mouseOver, setMouseOver] = useState(false);
   const projectsContainer = useRef();
   const projectCard = useRef();
   const onMouseMove = (e) => bgMouseMove(e, projectsContainer.current);
 
   useEffect(() => {
-    console.log(projectsContainer.current);
     projectCard.current.addEventListener(
       "mouseover",
-      cursorOnHover(cursor.current, setMouseOver)
+      cursorOnHover(cursor.current)
     );
     projectCard.current.addEventListener(
       "mouseleave",
-      cursorOnLeave(cursor.current, mouseOver, setMouseOver)
+      cursorOnLeave(cursor.current)
     );
     window.addEventListener("mousemove", onMouseMove);
-  }, [cursor, mouseOver]);
+
+    return () => {
+      window.removeEventListener("mousemove");
+    };
+  }, [cursor]);
 
   return (
     <div

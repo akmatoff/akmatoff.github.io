@@ -10,7 +10,7 @@ function Home() {
 
   useEffect(() => {
     window.addEventListener("mousemove", onMouseMove);
-  });
+  }, []);
 
   return (
     <div className="main-container flex-column" id="home">

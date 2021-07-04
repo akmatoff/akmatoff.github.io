@@ -9,7 +9,7 @@ function About() {
 
   useEffect(() => {
     window.addEventListener("mousemove", onMouseMove);
-  });
+  }, []);
 
   return (
     <div
