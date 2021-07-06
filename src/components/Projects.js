@@ -27,11 +27,6 @@ function Projects() {
             <div className="title">{project.project_title}</div>
             <div className="type">{project.project_type}</div>
             <div className="technology">{project.technology}</div>
-            <img
-              src={require("assets/images/history-book.jpg")}
-              alt="Thumbnail"
-              className="thumbnail"
-            ></img>
             <div className="description">{project.description}</div>
             <div className="project-links flex-row">
               {project.repositories.map((repo, index) => (

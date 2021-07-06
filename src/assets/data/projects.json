@@ -5,7 +5,6 @@
         "project_type": "Mobile App",
         "description": "An app about history of Kyrgyzstan that includes book written by O. Dj. Osmonov and history quizes for students.",
         "technology": "Flutter",
-        "thumbnail": "./assets/images/history-book.jpg",
         "repositories": [
             "https://github.com/boorsoft/history-book.git"
         ]
@@ -16,7 +15,6 @@
         "project_type": "Mobile App",
         "description": "Every year IUCA students kind of vote for teachers. It is made to improve the quality of education. The app is about making it online.",
         "technology": "Flutter, Django Rest Framework",
-        "thumbnail": "../assets/images/bseyes.jpg",
         "repositories": [
             "https://github.com/boorsoft/bseyes-flutter.git",
             "https://github.com/boorsoft/bseyes-restapi.git"
@@ -28,7 +26,6 @@
         "project_type": "Web App",
         "description": "Website for students and teachers of IUCA to search, read and download books in one place.",
         "technology": "React, Express",
-        "thumbnail": "../assets/images/htc-lib.png",
         "repositories": [
             "https://github.com/boorsoft/htc-lib.git",
             "https://github.com/boorsoft/htc-online-library-express.git"
