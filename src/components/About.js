@@ -19,19 +19,16 @@ function About() {
     >
       <h1 className="header-title">About</h1>
       <div className="text-container">
-        I'm a beginning JavaScript developer with some experience in React and
-        Express. I'm here to build REST APIs using Express and Single Page
-        Applications with React. I also design mobile apps with Flutter.
+        I'm a JavaScript developer with more than 3 years experience in
+        HTML/CSS/JS and 1 year experience in React and Express.
       </div>
       <div className="text-container">
-        After spending years on not knowing exactly in what direction I want to
-        move, looking for right technologies that I'd like to use I've come up
-        with web development using JavaScript and Mobile Development using
-        Flutter.
+        I build web apps that provide most common features which solve common
+        problems. Besides web apps I build mobile applications using Flutter.
       </div>
       <div className="text-container">
         I'm constantly working on my knowledge and skills to create better apps
-        with intuitive user interfaces and provide better user experience.
+        people would enjoy using.
       </div>
     </div>
   );

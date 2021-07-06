@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { bgMouseMove } from "../utils/utils";
 import "../App.css";
 import "./Projects.css";
-const projects = require("../assets/data/projects.json");
+import projects from "../assets/data/projects.json";
 
 function Projects() {
   const projectsContainer = useRef();
@@ -27,6 +27,11 @@ function Projects() {
             <div className="title">{project.project_title}</div>
             <div className="type">{project.project_type}</div>
             <div className="technology">{project.technology}</div>
+            <img
+              src={require("assets/images/history-book.jpg")}
+              alt="Thumbnail"
+              className="thumbnail"
+            ></img>
             <div className="description">{project.description}</div>
             <div className="project-links flex-row">
               {project.repositories.map((repo, index) => (
