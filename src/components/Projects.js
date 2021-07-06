@@ -28,12 +28,18 @@ function Projects() {
             <div className="type">{project.project_type}</div>
             <div className="technology">{project.technology}</div>
             <div className="description">{project.description}</div>
+            <div className="links">Links:</div>
             <div className="project-links flex-row">
               {project.repositories.map((repo, index) => (
                 <a key={index} href={repo} rel="noreferrer" target="_blank">
                   <i className="fab fa-github project-icon"></i>
                 </a>
               ))}
+              {project.app ? (
+                <a href={project.app} rel="noreferrer" target="_blank">
+                  <i className="fas fa-globe project-icon"></i>
+                </a>
+              ) : null}
             </div>
           </div>
         ))}

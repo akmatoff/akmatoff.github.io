@@ -5,6 +5,7 @@
         "project_type": "Mobile App",
         "description": "An app about history of Kyrgyzstan that includes book written by O. Dj. Osmonov and history quizes for students.",
         "technology": "Flutter",
+        "app": "https://t.me/historybookappkg",
         "repositories": [
             "https://github.com/boorsoft/history-book.git"
         ]
@@ -26,6 +27,7 @@
         "project_type": "Web App",
         "description": "Website for students and teachers of IUCA to search, read and download books in one place.",
         "technology": "React, Express",
+        "app": "https://htc-lib.boorsoft.repl.co",
         "repositories": [
             "https://github.com/boorsoft/htc-lib.git",
             "https://github.com/boorsoft/htc-online-library-express.git"
@@ -37,6 +39,7 @@
         "project_type": "Web App",
         "description": "A webGL app with a drivable car using keyboard implemented using ThreeJS library.",
         "technology": "ThreeJS",
+        "app": "https://akmatoff.github.io/threejs-car-driving",
         "repositories": [
             "https://github.com/akmatoff/threejs-car-driving"
         ]
