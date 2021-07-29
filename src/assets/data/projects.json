@@ -43,5 +43,26 @@
         "repositories": [
             "https://github.com/akmatoff/threejs-car-driving"
         ]
+    },
+    {
+        "project_id": "5",
+        "project_title": "P5.js Visualizer",
+        "project_type": "Web App",
+        "description": "Simple audio visuals with p5.js",
+        "technology": "P5.js",
+        "app": "https://akmatoff.github.io/p5-visualizer",
+        "repositories": [
+            "https://github.com/akmatoff/p5-visualizer"
+        ]
+    },
+    {
+        "project_id": "6",
+        "project_title": "Instabet | An instagram clone (almost)",
+        "project_type": "Web App",
+        "description": "Instagram like app",
+        "technology": "React, Express, Nodejs",
+        "repositories": [
+            "https://github.com/akmatoff/instabet"
+        ]
     }
 ]

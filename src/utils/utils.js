@@ -19,7 +19,7 @@ export const cursorMove = (e, target) => {
 export const scrollView = (scrollElement) => {
   let current = 0;
   let target = 0;
-  let ease = 0.03;
+  let ease = 0.06;
 
   // Linear interpolation to make it smooth
   const lerp = (start, end, ease) => {
