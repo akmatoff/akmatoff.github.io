@@ -64,5 +64,16 @@
         "repositories": [
             "https://github.com/akmatoff/instabet"
         ]
+    },
+    {
+        "project_id": "7",
+        "project_title": "Pomodoro",
+        "project_type": "Web App",
+        "description": "Just a simple pomodoro app",
+        "technology": "React",
+        "app": "https://akmatoff.github.io/pomodoro",
+        "repositories": [
+            "https://github.com/akmatoff/pomodoro"
+        ]
     }
 ]

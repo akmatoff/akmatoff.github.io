@@ -13,7 +13,7 @@ function Home() {
   }, []);
 
   return (
-    <div className="main-container flex-column" id="home">
+    <div className="main-container flex-column" id="home">  
       <div
         className="home-text-container flex-column centered"
         ref={homeTextContainer}
