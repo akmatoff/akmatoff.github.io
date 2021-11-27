@@ -1,6 +1,6 @@
 [
     {
-        "project_id": "1",
+        "project_id": 1,
         "project_title": "History of Kyrgyzstan",
         "project_type": "Mobile App",
         "description": "An app about history of Kyrgyzstan that includes book written by O. Dj. Osmonov and history quizes for students.",
@@ -11,7 +11,7 @@
         ]
     },
     {
-        "project_id": "2",
+        "project_id": 2,
         "project_title": "By Students' Eyes",
         "project_type": "Mobile App",
         "description": "Every year IUCA students kind of vote for teachers. It is made to improve the quality of education. The app is about making it online.",
@@ -22,7 +22,7 @@
         ]
     },
     {
-        "project_id": "3",
+        "project_id": 3,
         "project_title": "HTC Online Library",
         "project_type": "Web App",
         "description": "Website for students and teachers of IUCA to search, read and download books in one place.",
@@ -34,7 +34,7 @@
         ]
     },
     {
-        "project_id": "4",
+        "project_id": 4,
         "project_title": "ThreeJS Car Driving",
         "project_type": "Web App",
         "description": "A webGL app with a drivable car using keyboard implemented using ThreeJS library.",
@@ -45,7 +45,7 @@
         ]
     },
     {
-        "project_id": "5",
+        "project_id": 5,
         "project_title": "P5.js Visualizer",
         "project_type": "Web App",
         "description": "Simple audio visuals with p5.js",
@@ -56,7 +56,7 @@
         ]
     },
     {
-        "project_id": "6",
+        "project_id": 6,
         "project_title": "Instabet | An instagram clone (almost)",
         "project_type": "Web App",
         "description": "Instagram like app",
@@ -66,7 +66,7 @@
         ]
     },
     {
-        "project_id": "7",
+        "project_id": 7,
         "project_title": "Pomodoro",
         "project_type": "Web App",
         "description": "Just a simple pomodoro app",
@@ -74,6 +74,17 @@
         "app": "https://akmatoff.github.io/pomodoro",
         "repositories": [
             "https://github.com/akmatoff/pomodoro"
+        ]
+    },
+    {
+        "project_id": 8,
+        "project_title": "Github Repo Viewer",
+        "project_type": "Web App",
+        "description": "Just a simple github organization repositories viewing app",
+        "technology": "React, Redux, Redux-Saga, TypeScript",
+        "app": "https://akmatoff.github.io/github-repo-viewer/",
+        "repositories": [
+            "https://github.com/akmatoff/github-repo-viewer"
         ]
     }
 ]
