@@ -86,5 +86,27 @@
         "repositories": [
             "https://github.com/akmatoff/github-repo-viewer"
         ]
+    },
+    {
+        "project_id": 9,
+        "project_title": "Cooroot",
+        "project_type": "Web App",
+        "description": "My musician page",
+        "technology": "React",
+        "app": "https://cooroot.netlify.app",
+        "repositories": [
+            "https://github.com/akmatoff/coorootmusic"
+        ]
+    },
+    {
+        "project_id": 10,
+        "project_title": "Posterz",
+        "project_type": "Web App",
+        "description": "College project | A blog app",
+        "technology": "JavaScript, Python, Flask",
+        "app": "https://https://posterz.akmatoff.repl.co",
+        "repositories": [
+            "https://github.com/akmatoff/posterz"
+        ]
     }
 ]

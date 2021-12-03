@@ -19,7 +19,7 @@ function Projects() {
       id="projects"
     >
       <h1 className="header-title" id="projectsTitle">
-        PROJECTS
+        Projects
       </h1>
       <div className="projects-container">
         {projects.map((project) => (

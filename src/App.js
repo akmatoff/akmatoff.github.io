@@ -5,6 +5,7 @@ import { cursorMove, scrollView } from "./utils/utils";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import About from "./components/About";
+import Stack from "./components/Stack";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 
@@ -25,6 +26,7 @@ function App() {
       <div className="scroll-view" ref={scrollViewRef}>
         <Home />
         <About />
+        <Stack />
         <Projects />
         <Contact />
       </div>

@@ -89,7 +89,6 @@ body {
 }
 
 .header-title {
-  text-transform: uppercase;
   font-size: clamp(35px, 5vw, 55px);
 }
 
