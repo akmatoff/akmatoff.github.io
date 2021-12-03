@@ -67,8 +67,12 @@
   margin-right: 15px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 600px) {
   .projects-container {
     grid-template-columns: 1fr;
+  }
+
+  #projects {
+    align-items: center;
   }
 }

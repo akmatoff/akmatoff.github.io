@@ -18,8 +18,9 @@ function Home() {
         className="home-text-container flex-column centered"
         ref={homeTextContainer}
       >
-        <h1 className="greeting" data-text="HI, I'M AZIM AKMATOV">
-          HI, I'M AZIM AKMATOV
+        <h1 className="greeting" data-text="AZIM AKMATOV">
+          <div className="first-name">AZIM</div>
+          <div className="last-name">AKMATOV</div>
         </h1>
         <p className="greeting-about">
           A JAVASCRIPT DEVELOPER BASED IN KYRGYZSTAN

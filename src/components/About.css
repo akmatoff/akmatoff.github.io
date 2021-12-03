@@ -3,9 +3,15 @@
 }
 
 .text-container {
-  padding: 10px 0;
-  width: clamp(400px, 50vw, 600px);
+  padding: 5px 0;
+  width: clamp(380px, 50vw, 700px);
   font-size: clamp(15px, 4vw, 25px);
   text-align: justify;
   line-height: 1.6em;
+}
+
+@media screen and (max-width: 600px) {
+  #about {
+    align-items: center;
+  }
 }

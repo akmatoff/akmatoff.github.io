@@ -1,17 +1,26 @@
 .header {
+  background-color: rgba(26, 24, 26, 0.8);
   position: fixed;
-  width: clamp(350px, 50%, 500px);
-  height: 60px;
-  font-weight: 300;
+  width: 100%;
+  height: 100px;
+  font-weight: bold;
   justify-content: space-around;
   align-items: center;
   z-index: 100;
 }
 
 .header a {
+  display: block;
+  margin-right: 20px;
   transition: color 0.6s;
+  font-size: clamp(13px, 2vw, 18px);
 }
 
 .header a:hover {
   color: var(--highlight-color);
+}
+
+.header-inner {
+  width: auto;
+  padding: 0 20px;
 }

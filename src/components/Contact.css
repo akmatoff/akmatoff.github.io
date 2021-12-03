@@ -1,3 +1,7 @@
+#contact {
+  height: 100vh;
+}
+
 #contactForm {
   padding: 20px;
   justify-content: space-around;

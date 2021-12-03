@@ -2,12 +2,14 @@ import "./Header.css";
 
 function Header() {
   return (
-    <div className="header flex-row">
-      <a href="#home">HOME</a>
-      <a href="#about">ABOUT</a>
-      <a href="#projects">PROJECTS</a>
-      <a href="#contact">CONTACT</a>
-    </div>
+    <header className="header flex-row centered">
+      <div className="header-inner flex-row">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      </div>
+    </header>
   );
 }
 
