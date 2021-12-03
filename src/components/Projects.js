@@ -22,7 +22,7 @@ function Projects() {
         Projects
       </h1>
       <div className="projects-container">
-        {projects.map((project) => (
+        {projects.sort((p, p2) => p2.project_id - p.project_id).map((project) => (
           <div key={project.project_id} className="project-card">
             <div className="title">{project.project_title}</div>
             <div className="type">{project.project_type}</div>
