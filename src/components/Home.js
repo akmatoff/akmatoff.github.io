@@ -22,7 +22,7 @@ function Home() {
           HI, I'M AZIM AKMATOV
         </h1>
         <p className="greeting-about">
-          A FULL STACK DEVELOPER BASED IN KYRGYZSTAN
+          A JAVASCRIPT DEVELOPER BASED IN KYRGYZSTAN
         </p>
 
         <div className="social-links-container flex-row centered">

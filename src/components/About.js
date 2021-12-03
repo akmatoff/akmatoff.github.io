@@ -19,12 +19,11 @@ function About() {
     >
       <h1 className="header-title">About</h1>
       <div className="text-container">
-        I'm a JavaScript developer with more than 3 years experience in
-        HTML/CSS/JS and 1 year experience in React and Express.
+        
       </div>
       <div className="text-container">
         I build web apps that provide most common features which solve common
-        problems. Besides web apps I build mobile applications using Flutter.
+        problems.
       </div>
       <div className="text-container">
         I'm constantly working on my knowledge and skills to create better apps

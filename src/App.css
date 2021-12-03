@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 :root {
-  --primary-color: #171717;
-  --secondary-color: #232323;
-  --text-color: #d7d5e0;
-  --highlight-color: #e9e7fa;
+  --primary-color: #1a181a;
+  --secondary-color: #2D2E2E;
+  --text-color: #b4b4b4;
+  --highlight-color: #FBFBFB;
 }
 
 * {
@@ -18,13 +18,14 @@ a {
 }
 
 p {
-  font-size: 23px;
+  font-size: 30px;
 }
 
 h1,
 h2,
 h3 {
   margin: 0;
+  font-size: 35px;
 }
 
 html {
@@ -39,8 +40,9 @@ body {
   color: var(--text-color);
   margin: 0;
   padding: 0;
-  font-family: "Rubik", sans-serif;
+  font-family: "Lato", sans-serif;
   height: auto;
+  width: 100%;
   /* scrollbar-width: none; */
 }
 
@@ -86,7 +88,7 @@ body {
 
 .header-title {
   text-transform: uppercase;
-  font-size: clamp(25px, 5vw, 35px);
+  font-size: clamp(35px, 5vw, 55px);
 }
 
 @keyframes cursorAnimation {
@@ -100,8 +102,10 @@ body {
   }
 }
 
-/* @media screen and (max-width: 1200) {
+@media screen and (max-width: 1200) {
   .main-container {
     width: 100%;
+    align-items: center;
+    justify-content: center;
   }
-} */
+}

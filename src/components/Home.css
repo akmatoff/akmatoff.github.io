@@ -1,14 +1,14 @@
 #home {
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
 .greeting {
-  font-weight: normal;
-  font-size: clamp(1.8rem, 5vw, 70px);
+  text-align: left;
+  font-weight: bold;
+  font-size: clamp(4.8rem, 5vw, 90px);
   text-shadow: -0.04em 0.021em 0 rgba(255, 0, 0.8),
     0.03em -0.05em 0 rgba(0, 255, 0, 0.8), -0.09em 0.03em 0 rgba(0, 0, 255, 0.8);
-
   animation: glitch 1.7s infinite;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .home-text-container {
-  text-align: center;
+  text-align: justify;
   padding: 40px;
 }
 
