@@ -19,14 +19,28 @@ function About() {
     >
       <h1 className="header-title">About</h1>
       <div className="text-container">
-        I am an 18 years old developer based in Kyrgyzstan. 
-        I build web apps that provide most common features which solve common
-        problems. I'm constantly working on my knowledge and skills to create better apps
+        I am an 18 years old developer based in Kyrgyzstan. I build web apps
+        that provide most common features which solve common problems. I'm
+        constantly working on my knowledge and skills to create better apps
         people would enjoy using.
       </div>
       <div className="text-container">
-        Besides programming I make electronic music (<a class="link" href="https://cooroot.netlify.app">here is my musician profile link</a>),
-        play guitar and sing (probably I'm not a great singer). 
+        Besides programming I make electronic music (
+        <a class="link" href="https://cooroot.netlify.app">
+          here is my musician profile link
+        </a>
+        ), play guitar and sing (probably I'm not a great singer).
+      </div>
+      <div className="text-container">
+        Also I practice touch typing on websites like{" "}
+        <a class="link" href="https://monkeytype.com">
+          monkeytype
+        </a>{" "}
+        and{" "}
+        <a class="link" href="https://10fastfingers.com">
+          10fastfingers
+        </a>
+        . I really enjoy typing.
       </div>
     </div>
   );
