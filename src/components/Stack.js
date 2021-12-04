@@ -17,18 +17,17 @@ function Stack() {
     >
       <h1 className="header-title">Stack</h1>
       <div className="text-container">
-        I'm familiar with technologies like
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>React</li>
-          <li>Redux</li>
-          <li>Redux-Saga</li>
-          <li>TypeScript</li>
-          <li>Node</li>
-          <li>P5js</li>
-          <li>ThreeJS</li>
-        </ul>
+        I'm familiar with technologies like:
+        <div className="stack-container flex-row">
+          <div className="stack-card">HTML</div>
+          <div className="stack-card">CSS</div>
+          <div className="stack-card">React</div>
+          <div className="stack-card">Redux</div>
+          <div className="stack-card">Redux-Saga</div>
+          <div className="stack-card">TypeScript</div>
+          <div className="stack-card">P5js</div>
+          <div className="stack-card">Threejs</div>
+        </div>
       </div>
 
       <div className="text-container">
