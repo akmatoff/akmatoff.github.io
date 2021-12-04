@@ -26,18 +26,18 @@ function About() {
       </div>
       <div className="text-container">
         Besides programming I make electronic music (
-        <a class="link" href="https://cooroot.netlify.app">
+        <a className="link" href="https://cooroot.netlify.app">
           here is my musician profile link
         </a>
         ), play guitar and sing (probably I'm not a great singer).
       </div>
       <div className="text-container">
         Also I practice touch typing on websites like{" "}
-        <a class="link" href="https://monkeytype.com">
+        <a className="link" href="https://monkeytype.com">
           monkeytype
         </a>{" "}
         and{" "}
-        <a class="link" href="https://10fastfingers.com">
+        <a className="link" href="https://10fastfingers.com">
           10fastfingers
         </a>
         . I really enjoy typing.

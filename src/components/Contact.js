@@ -3,16 +3,13 @@ import emailjs from "emailjs-com";
 import { bgMouseMove } from "../utils/utils";
 import "./Contact.css";
 
+emailjs.init(process.env.USER_ID);
+
 function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(
-      process.env.REACT_APP_SERVICE_ID,
-      process.env.REACT_APP_TEMPLATE_ID,
-      e.target,
-      process.env.REACT_APP_USER_ID
-    );
+    emailjs.sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, e.target);
     e.target.reset();
   };
 
