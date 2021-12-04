@@ -18,8 +18,7 @@
   width: clamp(400px, 50vw, 500px);
   min-height: 400px;
   padding: 50px;
-  /* background-color: var(--secondary-color); */
-  border-radius: 15px;
+  border-radius: 10px;
   transition: 0.3s ease-in;
 }
 
@@ -33,6 +32,7 @@
 }
 
 .title {
+  margin: 10px 0;
   font-weight: bold;
   font-size: clamp(1.6rem, 50vw, 2rem);
 }
