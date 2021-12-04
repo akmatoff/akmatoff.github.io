@@ -37,9 +37,13 @@ function Home() {
           <a href="https://t.me/akmatoffexe" target="_blank" rel="noreferrer">
             <i className="fab fa-telegram-plane social-icon"></i>
           </a>
+          <a href="https://linkedin.com/in/akmatoff" target="_blank" rel="noreferrer">
+            <i className="fab fa-linkedin social-icon" />
+          </a>
           <a href="mailto: akmatoff.exe@gmail.com">
             <i className="fas fa-envelope social-icon"></i>
           </a>
+  
         </div>
       </div>
     </div>
