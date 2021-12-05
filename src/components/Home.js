@@ -47,6 +47,13 @@ function Home() {
           >
             <i className="fab fa-linkedin social-icon" />
           </a>
+          <a
+            href="https://freecodecamp.org/akmatoff"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fab fa-free-code-camp social-icon" />
+          </a>
           <a href="mailto: akmatoff.exe@gmail.com">
             <i className="fas fa-envelope social-icon"></i>
           </a>
