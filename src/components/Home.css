@@ -9,6 +9,7 @@
   height: clamp(250px, 50vw, 400px);
   margin-right: clamp(-70px, 5vw, -180px);
   margin-top: -70px;
+  transform-origin: bottom;
   transition: 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
