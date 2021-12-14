@@ -27,7 +27,7 @@ function About() {
       <div className="text-container">
         I've tried quite a lot of programming languages such as Python, Java, C#
         and Dart during my trip into programming. But my first, favorite and
-        language which I'm most experienced with is JavaScript. 
+        language which I'm most experienced with is JavaScript.
       </div>
       <div className="text-container">
         Besides programming I make electronic music (

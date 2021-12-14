@@ -118,5 +118,27 @@
         "repositories": [
             "https://github.com/akmatoff/coorootmusic"
         ]
+    },
+    {
+        "project_id": 12,
+        "project_title": "Markdown Previewer",
+        "project_type": "Web App",
+        "description": "A simple markdown editor and previewer",
+        "technology": "React, TypeScript",
+        "app": "https://akmatoff.github.io/markdown-previewer/",
+        "repositories": [
+            "https://github.com/akmatoff/markdown-previewer"
+        ]
+    },
+    {
+        "project_id": 13,
+        "project_title": "Random Quote Machine",
+        "project_type": "Web App",
+        "description": "A simple random quote generator",
+        "technology": "React",
+        "app": "https://akmatoff.github.io/random-quote-machine/",
+        "repositories": [
+            "https://github.com/akmatoff/random-quote-machine"
+        ]
     }
 ]
