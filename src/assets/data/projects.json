@@ -140,5 +140,16 @@
         "repositories": [
             "https://github.com/akmatoff/random-quote-machine"
         ]
+    },
+    {
+        "project_id": 14,
+        "project_title": "Calculator",
+        "project_type": "Web App",
+        "description": "A simple calculator",
+        "technology": "React, TypeScript, Redux",
+        "app": "https://akmatoff.github.io/calculator/",
+        "repositories": [
+            "https://github.com/akmatoff/calculator"
+        ]
     }
 ]
