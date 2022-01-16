@@ -32,7 +32,7 @@ function Stack() {
 
       <div className="text-container">
         You can download my resume{" "}
-        <a className="link" href="AKMATOV AZIM.pdf" download>
+        <a className="link" href="front-end-dev-resume.pdf" download>
           here
         </a>
       </div>

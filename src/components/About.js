@@ -19,15 +19,15 @@ function About() {
     >
       <h1 className="header-title">About</h1>
       <div className="text-container">
-        I am an 18 years old developer based in Kyrgyzstan. I build web apps
-        that provide most common features which solve common problems. I'm
-        constantly working on my knowledge and skills to create better apps
-        people would enjoy using.
+        I'm mostly a self-taught front-end developer who is open to build web
+        apps that solve problems. I have passion for solving problems using
+        coding and I am (almost) always open to learn new things!
       </div>
       <div className="text-container">
         I've tried quite a lot of programming languages such as Python, Java, C#
         and Dart during my trip into programming. But my first, favorite and
-        language which I'm most experienced with is JavaScript.
+        language which I'm most experienced with is JavaScript, even though it's
+        a bit weird language.
       </div>
       <div className="text-container">
         Besides programming I make electronic music (
