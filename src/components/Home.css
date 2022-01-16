@@ -49,8 +49,8 @@
 }
 
 .social-links-container {
-  width: 250px;
-  padding: 10px;
+  min-width: 330px;
+  padding: 5px;
   justify-content: space-around;
 }
 

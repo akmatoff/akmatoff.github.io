@@ -1,4 +1,5 @@
 import { useRef, useEffect } from "react";
+import { SiCodewars, SiSololearn } from "react-icons/si";
 import { bgMouseMove } from "../utils/utils";
 import "../App.css";
 import "./Home.css";
@@ -53,6 +54,12 @@ function Home() {
             rel="noreferrer"
           >
             <i className="fab fa-free-code-camp social-icon" />
+          </a>
+          <a href="https://www.codewars.com/users/akmatoff">
+            <SiCodewars className="social-icon" />
+          </a>
+          <a href="https://www.sololearn.com/profile/15963341">
+            <SiSololearn className="social-icon" />
           </a>
           <a href="mailto: akmatoff.exe@gmail.com">
             <i className="fas fa-envelope social-icon"></i>
