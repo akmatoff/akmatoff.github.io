@@ -1,7 +1,7 @@
 import { useRef, useEffect } from "react";
 import { AiFillHtml5 } from "react-icons/ai";
 import { DiCss3, DiReact } from "react-icons/di";
-import { SiRedux, SiReduxsaga, SiTypescript } from "react-icons/si";
+import { SiRedux, SiReduxsaga, SiTypescript, SiExpress } from "react-icons/si";
 import { IoCube } from "react-icons/io5";
 import { FaAsterisk } from "react-icons/fa";
 import { bgMouseMove } from "../utils/utils";
@@ -35,6 +35,10 @@ function Stack() {
             React
           </div>
           <div className="stack-card flex-row centered">
+            <SiExpress className="stack-card__icon" />
+            Express
+          </div>
+          <div className="stack-card flex-row centered">
             <SiRedux className="stack-card__icon" />
             Redux
           </div>
@@ -57,10 +61,13 @@ function Stack() {
         </div>
       </div>
 
-      <div className="text-container">
-        You can download my resume{" "}
-        <a className="link" href="front-end-dev-resume.pdf" download>
-          here
+      <div className="resume-container flex-column centered">
+        <p>
+          I am currently open for new opportunities and free to hire! Feel free
+          to get in touch!
+        </p>
+        <a className="resume-link" href="front-end-dev-resume.pdf" download>
+          View Resume
         </a>
       </div>
     </div>
