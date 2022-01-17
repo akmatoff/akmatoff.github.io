@@ -65,6 +65,10 @@ body {
   justify-content: center;
 }
 
+.scroll-view {
+  width: 85%;
+}
+
 .cursor {
   position: fixed;
   width: 0.7rem;
