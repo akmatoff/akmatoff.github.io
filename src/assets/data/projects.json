@@ -61,7 +61,7 @@
         "project_id": 9,
         "project_title": "Pomodoro",
         "project_type": "Web App",
-        "description": "Just a simple pomodoro app",
+        "description": "Be productive and use your time efficiently with a pomodoro",
         "technology": "React",
         "app": "https://akmatoff.github.io/pomodoro",
         "picture": "https://gcdn.pbrd.co/images/QhLlUbkfHiPe.png?o=1",
@@ -73,7 +73,7 @@
         "project_id": 11,
         "project_title": "Github Repo Viewer",
         "project_type": "Web App",
-        "description": "Just a simple github organization repositories viewing app",
+        "description": "View the repositories of a specific github organization",
         "technology": "React, Redux, Redux-Saga, TypeScript",
         "app": "https://akmatoff.github.io/github-repo-viewer/",
         "picture": "https://gcdn.pbrd.co/images/4O16P97hb1qK.png?o=1",
@@ -97,7 +97,7 @@
         "project_id": 12,
         "project_title": "Markdown Previewer",
         "project_type": "Web App",
-        "description": "A simple markdown editor and previewer",
+        "description": "A markdown editor and previewer",
         "technology": "React, TypeScript",
         "app": "https://akmatoff.github.io/markdown-previewer/",
         "picture": "https://gcdn.pbrd.co/images/ZBOBWIGY66e0.png?o=1",
@@ -109,7 +109,7 @@
         "project_id": 13,
         "project_title": "Random Quote Machine",
         "project_type": "Web App",
-        "description": "A simple random quote generator",
+        "description": "Random quotes generating app",
         "technology": "React",
         "app": "https://akmatoff.github.io/random-quote-machine/",
         "picture": "https://gcdn.pbrd.co/images/aliRSxh6Oeav.png?o=1",
@@ -121,12 +121,24 @@
         "project_id": 14,
         "project_title": "Calculator",
         "project_type": "Web App",
-        "description": "A simple calculator",
+        "description": "A calculator app to make common calculations",
         "technology": "React, TypeScript, Redux",
         "app": "https://akmatoff.github.io/calculator/",
         "picture": "https://gcdn.pbrd.co/images/fbM4WoXe343D.png?o=1",
         "repositories": [
             "https://github.com/akmatoff/calculator"
+        ]
+    },
+    {
+        "project_id": 15,
+        "project_title": "Savings Calculator",
+        "project_type": "Web App",
+        "description": "A web app for savings calculation. It calculates how much money you save by a specific year and month if you despotit monthly or how much you have to deposit monthly to get the amount you want.",
+        "technology": "React, TypeScript, Redux, Styled Components",
+        "app": "https://akmatoff.github.io/savings-calculator/",
+        "picture": "https://gcdn.pbrd.co/images/W5mL1ZVgQuHs.png?o=1",
+        "repositories": [
+            "https://github.com/akmatoff/savings-calculator"
         ]
     }
 ]
