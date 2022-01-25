@@ -40,7 +40,7 @@
         "description": "A webGL app with a drivable car using keyboard implemented using ThreeJS library.",
         "technology": "ThreeJS",
         "app": "https://akmatoff.github.io/threejs-car-driving",
-        "picture": "https://gcdn.pbrd.co/images/VtsCmZHAy4iS.png?o=1",
+        "picture": "https://i.ibb.co/vVYp2n4/threejs-car-driving.jpg",
         "repositories": [
             "https://github.com/akmatoff/threejs-car-driving"
         ]
@@ -52,7 +52,7 @@
         "description": "Simple audio visuals with p5.js",
         "technology": "P5.js",
         "app": "https://akmatoff.github.io/p5-visualizer",
-        "picture": "https://gcdn.pbrd.co/images/YBOtfu0LND2F.png?o=1",
+        "picture": "https://i.ibb.co/dmX6FBV/p5-visualizer.jpg",
         "repositories": [
             "https://github.com/akmatoff/p5-visualizer"
         ]
@@ -64,7 +64,7 @@
         "description": "Be productive and use your time efficiently with a pomodoro",
         "technology": "React",
         "app": "https://akmatoff.github.io/pomodoro",
-        "picture": "https://gcdn.pbrd.co/images/QhLlUbkfHiPe.png?o=1",
+        "picture": "https://i.ibb.co/ky24vT6/pomodoro.jpg",
         "repositories": [
             "https://github.com/akmatoff/pomodoro"
         ]
@@ -76,7 +76,7 @@
         "description": "View the repositories of a specific github organization",
         "technology": "React, Redux, Redux-Saga, TypeScript",
         "app": "https://akmatoff.github.io/github-repo-viewer/",
-        "picture": "https://gcdn.pbrd.co/images/4O16P97hb1qK.png?o=1",
+        "picture": "https://i.ibb.co/7C1HdB3/github-repo-viewer.jpg",
         "repositories": [
             "https://github.com/akmatoff/github-repo-viewer"
         ]
@@ -87,7 +87,7 @@
         "project_type": "Web App",
         "description": "My musician page",
         "technology": "React",
-        "app": "https://cooroot.netlify.app",
+        "app": "https://i.ibb.co/vdSY7ZS/cooroot.jpg",
         "picture": "https://gcdn.pbrd.co/images/eQk18PTAzwus.png?o=1",
         "repositories": [
             "https://github.com/akmatoff/coorootmusic"
@@ -100,7 +100,7 @@
         "description": "A web app for savings calculation. It calculates how much money you save by a specific year and month if you despotit monthly or how much you have to deposit monthly to get the amount you want.",
         "technology": "React, TypeScript, Redux, Styled Components",
         "app": "https://akmatoff.github.io/savings-calculator/",
-        "picture": "https://gcdn.pbrd.co/images/W5mL1ZVgQuHs.png?o=1",
+        "picture": "https://i.ibb.co/vmgTnyJ/savings-calculator.jpg",
         "repositories": [
             "https://github.com/akmatoff/savings-calculator"
         ]
