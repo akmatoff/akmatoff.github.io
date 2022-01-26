@@ -1,17 +1,6 @@
 [
     {
         "project_id": 1,
-        "project_title": "Posterz",
-        "project_type": "Web App",
-        "description": "College project | A blog app",
-        "technology": "JavaScript, Python, Flask",
-        "app": "https://https://posterz.akmatoff.repl.co",
-        "repositories": [
-            "https://github.com/akmatoff/posterz"
-        ]
-    },
-    {
-        "project_id": 5,
         "project_title": "Boorsound",
         "project_type": "Desktop App",
         "description": "An mp3 player for desktop that provides most common features mp3 players require.",
@@ -21,20 +10,7 @@
         ]
     },
     {
-        "project_id": 4,
-        "project_title": "HTC Online Library",
-        "project_type": "Web App",
-        "description": "Website for students and teachers of IUCA to search, read and download books in one place.",
-        "technology": "React, Express",
-        "app": "https://htc-lib.boorsoft.repl.co",
-        "picture": "https://gcdn.pbrd.co/images/197vvJfvkBoB.png?o=1",
-        "repositories": [
-            "https://github.com/boorsoft/htc-lib.git",
-            "https://github.com/boorsoft/htc-online-library-express.git"
-        ]
-    },
-    {
-        "project_id": 6,
+        "project_id": 2,
         "project_title": "ThreeJS Car Driving",
         "project_type": "Web App",
         "description": "A webGL app with a drivable car using keyboard implemented using ThreeJS library.",
@@ -46,7 +22,7 @@
         ]
     },
     {
-        "project_id": 7,
+        "project_id": 3,
         "project_title": "P5.js Visualizer",
         "project_type": "Web App",
         "description": "Simple audio visuals with p5.js",
@@ -58,7 +34,7 @@
         ]
     },
     {
-        "project_id": 9,
+        "project_id": 4,
         "project_title": "Pomodoro",
         "project_type": "Web App",
         "description": "Be productive and use your time efficiently with a pomodoro",
@@ -70,7 +46,7 @@
         ]
     },
     {
-        "project_id": 11,
+        "project_id": 6,
         "project_title": "Github Repo Viewer",
         "project_type": "Web App",
         "description": "View the repositories of a specific github organization",
@@ -82,7 +58,7 @@
         ]
     },
     {
-        "project_id": 10,
+        "project_id": 5,
         "project_title": "Cooroot",
         "project_type": "Web App",
         "description": "My musician page",
@@ -94,7 +70,7 @@
         ]
     },
     {
-        "project_id": 12,
+        "project_id": 7,
         "project_title": "Savings Calculator",
         "project_type": "Web App",
         "description": "A web app for savings calculation. It calculates how much money you save by a specific year and month if you despotit monthly or how much you have to deposit monthly to get the amount you want.",

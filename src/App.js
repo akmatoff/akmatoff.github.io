@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import "./App.css";
 import "./components/Home.css";
-import { cursorMove, scrollView } from "./utils/utils";
+import { cursorMove } from "./utils/utils";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -16,7 +16,6 @@ function App() {
   const onMouseMove = (e) => cursorMove(e, cursor.current);
 
   useEffect(() => {
-    scrollView(scrollViewRef.current);
     window.addEventListener("mousemove", onMouseMove);
   }, []);
 
