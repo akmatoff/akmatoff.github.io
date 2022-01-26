@@ -87,8 +87,8 @@
         "project_type": "Web App",
         "description": "My musician page",
         "technology": "React",
-        "app": "https://i.ibb.co/vdSY7ZS/cooroot.jpg",
-        "picture": "https://gcdn.pbrd.co/images/eQk18PTAzwus.png?o=1",
+        "app": "https://cooroot.netlify.app",
+        "picture": "https://i.ibb.co/vdSY7ZS/cooroot.jpg",
         "repositories": [
             "https://github.com/akmatoff/coorootmusic"
         ]
