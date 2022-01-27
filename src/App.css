@@ -61,12 +61,12 @@ body {
   display: none;
 } */
 
-.App {
-  justify-content: center;
+.scroll-view {
+  width: 95%;
 }
 
-.scroll-view {
-  width: 85%;
+.App {
+  justify-content: center;
 }
 
 .cursor {
@@ -82,7 +82,7 @@ body {
 .main-container {
   width: 100%;
   height: auto;
-  padding: 60px 20px;
+  padding: 60px 0;
   /* scroll-snap-align: center; */
 }
 

@@ -1,12 +1,14 @@
 #about,
 #stack {
   align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .text-container {
   margin: 5px 0;
   padding: 5px 0;
-  width: clamp(380px, 50vw, 700px);
+  width: clamp(380px, 50vw, 600px);
   font-size: clamp(15px, 4vw, 25px);
   text-align: justify;
   line-height: 1.6em;
@@ -72,6 +74,16 @@
 
 .resume-link:hover {
   color: var(--highlight-color);
+}
+
+#cactus-3d-container {
+  width: clamp(400px, 50vw, 650px);
+  height: clamp(400px, 50vw, 650px);
+}
+
+#cactus-3d {
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 600px) {

@@ -11,7 +11,6 @@ import Contact from "./components/Contact";
 
 function App() {
   const cursor = useRef();
-  const scrollViewRef = useRef();
 
   const onMouseMove = (e) => cursorMove(e, cursor.current);
 
@@ -22,7 +21,7 @@ function App() {
   return (
     <div className="App flex-row">
       <Header />
-      <div className="scroll-view" ref={scrollViewRef}>
+      <div className="scroll-view">
         <Home />
         <About />
         <Stack />
