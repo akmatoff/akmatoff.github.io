@@ -18,13 +18,14 @@
   width: 100%;
   min-height: 400px;
   margin: clamp(20px, 2vw, 60px);
-  padding: 50px 20px;
+  padding: 50px;
   border-radius: 10px;
   transition: 0.3s ease-in;
 }
 
 .project-card__text {
   width: 350px;
+  margin-bottom: 40px;
 }
 
 .picture {

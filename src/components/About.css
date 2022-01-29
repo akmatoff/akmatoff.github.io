@@ -82,8 +82,11 @@
 }
 
 #cactus-3d {
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  top: 85%;
+  left: 10%;
+  display: block;
+  z-index: -1;
 }
 
 @media screen and (max-width: 600px) {

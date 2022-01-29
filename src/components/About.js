@@ -5,6 +5,7 @@ import "./About.css";
 
 function About() {
   const aboutContainer = useRef();
+
   const onMouseMove = (e) => bgMouseMove(e, aboutContainer.current);
 
   useEffect(() => {
@@ -46,9 +47,9 @@ function About() {
         </div>
       </div>
 
-      <div id="cactus-3d-container">
-        <canvas id="cactus-3d" />
-      </div>
+      {/* <div id="cactus-3d-container"> */}
+
+      {/* </div> */}
     </div>
   );
 }
