@@ -2,6 +2,8 @@ import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import cactus from "./assets/3d-models/cactus with glasses.gltf";
 
+const bgColor = 0x131112;
+
 const Scene = (canvas) => {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
@@ -9,7 +11,7 @@ const Scene = (canvas) => {
   // Scene
   const scene = new THREE.Scene();
   // scene.background = new THREE.Color(0xff1a181a);
-  scene.fog = new THREE.FogExp2("#1a181a", 0.27);
+  scene.fog = new THREE.FogExp2(bgColor, 0.27);
 
   var cactusModel;
   let mouseX = 0,
@@ -37,15 +39,20 @@ const Scene = (canvas) => {
   renderer.setSize(canvas.width, canvas.height);
 
   // Lights
-  const spotlight = new THREE.SpotLight(0xccb499, 40);
+  const spotlight = new THREE.SpotLight(0xbfcadb, 10);
   spotlight.castShadow = true;
-  spotlight.shadow.bias = -0.0001;
+  spotlight.shadow.bias = -0.001;
   spotlight.shadow.mapSize.set(1024 * 4, 1024 * 4);
   scene.add(spotlight);
 
-  const dirLight = new THREE.DirectionalLight(0x333b4a, 70);
+  const ambientLight = new THREE.AmbientLight(0xe5e5e5, 0.7);
+  scene.add(ambientLight);
+
+  const dirLight = new THREE.DirectionalLight(0x333b4a, 16);
   dirLight.castShadow = true;
-  dirLight.position.set(-5, 5, 0);
+  dirLight.shadow.bias = -0.0001;
+  dirLight.shadow.mapSize.set(1024 * 4, 1024 * 4);
+  dirLight.position.set(5, 5, 0);
   scene.add(dirLight);
 
   // Loader
@@ -69,16 +76,16 @@ const Scene = (canvas) => {
     render();
   });
 
-  // const planeGeo = new THREE.PlaneGeometry(1024, 1024);
-  // const planeMat = new THREE.MeshPhongMaterial({
-  //   color: "#1a181a",
-  //   shininess: 1.0,
-  //   reflectivity: 1,
-  // });
-  // const plane = new THREE.Mesh(planeGeo, planeMat);
-  // plane.position.set(0, 0, 0);
-  // plane.rotation.x = -Math.PI / 2;
-  // plane.receiveShadow = true;
+  const planeGeo = new THREE.PlaneGeometry(1024, 1024);
+  const planeMat = new THREE.MeshPhongMaterial({
+    color: 0x000000,
+    shininess: 1.0,
+    reflectivity: 1,
+  });
+  const plane = new THREE.Mesh(planeGeo, planeMat);
+  plane.position.set(0, 0, 0);
+  plane.rotation.x = -Math.PI / 2;
+  plane.receiveShadow = true;
 
   // scene.add(plane);
 
@@ -93,17 +100,19 @@ const Scene = (canvas) => {
       camera.position.z
     );
 
-    camera.position.x += (mouseX - camera.position.x) * 0.05;
+    // camera.position.x += (mouseX - camera.position.x) * 0.02;
     // camera.position.y += (-mouseY - camera.position.y) * 0.05;
 
+    cactusModel.rotation.y += (mouseX - cactusModel.rotation.y) * 0.004;
+
     camera.lookAt(
-      cactusModel.position.x,
+      cactusModel.position.x - 2,
       cactusModel.position.y + 2,
       cactusModel.position.z - 2
     );
 
     cactusModel.rotation.y += Math.sin(Date.now() * 0.001) * 0.005;
-    cactusModel.rotation.z += Math.sin(Date.now() * 0.002) * 0.003;
+    cactusModel.rotation.z += Math.sin(Date.now() * 0.002) * 0.002;
 
     renderer.render(scene, camera);
   };
@@ -115,7 +124,7 @@ const Scene = (canvas) => {
   };
 
   const onMouseMove = (e) => {
-    mouseX = (e.clientX - window.innerWidth / 2) * 0.003;
+    mouseX = (e.clientX - window.innerWidth / 2) * 0.005;
     mouseY = (e.clientY - window.innerHeight / 2) * 0.003;
   };
 

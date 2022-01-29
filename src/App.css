@@ -2,11 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 :root {
-  --primary-color: #1a181a;
-  --secondary-color: #2c2c2c;
+  --primary-color: #131112;
+  --secondary-color: #1a1b1b;
   --text-color: #b4b4b4;
-  --highlight-color: rgb(230, 224, 224);
-  --dark-color: #727272;
+  --highlight-color: #c2c0c0;
+  --dark-color: #5c666b;
 }
 
 * {
@@ -60,6 +60,13 @@ body {
 /* ::-webkit-scrollbar {
   display: none;
 } */
+
+#cactus-3d {
+  position: absolute;
+  top: 85%;
+  display: block;
+  z-index: -1;
+}
 
 .scroll-view {
   width: 95%;

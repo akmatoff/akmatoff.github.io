@@ -84,7 +84,6 @@
 #cactus-3d {
   position: absolute;
   top: 85%;
-  left: 10%;
   display: block;
   z-index: -1;
 }
