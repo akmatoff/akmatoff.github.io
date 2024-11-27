@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  --primary-color: black;
+  --primary-color: rgb(26, 106, 211);
   --background-color: white;
 }
 
@@ -26,8 +26,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: clamp(300px, 60vw, 850px);
+  width: clamp(300px, 60vw, 720px);
   padding-top: 20px;
+  border-bottom: 1px solid #d1d1d1;
 }
 
 strong {
@@ -73,8 +74,7 @@ p {
 }
 
 main {
-  margin-top: 60px;
-  width: clamp(300px, 60vw, 850px);
+  width: clamp(300px, 60vw, 720px);
   min-height: 74vh;
 }
 
@@ -84,12 +84,27 @@ a {
 }
 
 section {
-  margin-bottom: 50px;
+  padding: 16px 0;
+  border-bottom: 1px solid #d1d1d1;
 }
 
-/* .tag-item {
-  text-decoration: dashed;
-} */
+.section-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.socials {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.social-icon {
+  width: 26px;
+  height: 26px;
+  transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
 
 .page-content {
   margin: 12px 0;
