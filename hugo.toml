@@ -2,6 +2,8 @@ baseURL = 'https://akmatoff.github.io/'
 languageCode = 'en-US'
 title = 'Azim Akmatov'
 
+theme = 'jonokoi'
+
 [[menus.main]]
 name = 'Home'
 pageRef = '/'
@@ -21,6 +23,11 @@ weight = 30
 name = 'Projects'
 pageRef = '/projects'
 weight = 40
+
+[[menus.main]]
+name = 'About'
+pageRef = '/about'
+weight = 50
 
 [module]
 [module.hugoVersion]
