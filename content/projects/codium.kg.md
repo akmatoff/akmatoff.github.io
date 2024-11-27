@@ -2,7 +2,9 @@
 title: "Codium.kg"
 date: 2024-11-27T05:10:27+06:00
 draft: false
-description: ""
+summary: "An education and management platform for students, teachers and managers of a local education centre which is built only with enthusiasm."
+viewLink: "https://codiumdev.com"
+source: "https://github.com/codiumkg"
 ---
 
 I's a platform for the organization **"Codium"** which is

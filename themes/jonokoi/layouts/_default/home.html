@@ -1,31 +1,37 @@
 {{ define "main" }}
+{{ $format := "January 2, 2006" }}
 <section id="home">
-  {{ .Content }}
-
   <div class="socials">
     <a href="https://github.com/akmatoff"><img class="social-icon" src="/icons/RiGithubFill.svg"></a>
-    <a href="https://linkedin.com/in/akmatoff/"><img class="social-icon" src="/icons/RiLinkedinFill.svg"></a>
     <a href="https://t.me/azimoffs"><img class="social-icon" src="/icons/RiTelegramFill.svg"></a>
+    <a href="https://linkedin.com/in/akmatoff/"><img class="social-icon" src="/icons/RiLinkedinFill.svg"></a>
   </div>
+
+  {{ .Content }}
+
+
 </section>
 <section id="posts">
   <div class="section-heading">
-    <img src="/icons/pen.svg" width="32" height="32">
+    <img src="/icons/pen.svg" width="26" height="26">
     <h1>Writings</h1>
   </div>
   {{ range where site.RegularPages "Type" "==" "posts" }}
   <h3><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
-  {{ .Summary }}
+
+  <span class="subtitle">{{ .Date.Format $format }}</span>
+
+  <p>{{ .Summary }}</p>
   {{ end }}
 </section>
 <section id="projects">
   <div class="section-heading">
-    <img src="/icons/tools.svg" width="32" height="32" />
+    <img src="/icons/tools.svg" width="26" height="26" />
     <h1>Projects</h1>
   </div>
   {{ range where site.RegularPages "Type" "==" "projects" }}
   <h3><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
-  {{ .Summary }}
+  <p>{{ .Summary }}</p>
   {{ end }}
 </section>
 {{ end }}

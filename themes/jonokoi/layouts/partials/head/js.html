@@ -1,5 +1,6 @@
 {{- with resources.Get "js/main.js" }}
-<script async data-uid="cf7c497bd5" src="https://akmatoff.kit.com/cf7c497bd5/index.js"></script>
+{{/*
+<script async data-uid="cf7c497bd5" src="https://akmatoff.kit.com/cf7c497bd5/index.js"></script> */}}
 {{- if eq hugo.Environment "development" }}
 {{- with . | js.Build }}
 <script src="{{ .RelPermalink }}"></script>

@@ -5,7 +5,7 @@ draft: false
 description: ""
 ---
 
-## Front-End Developer
+I'm a front-end developer with over 2 years of experience in creating web experiences which don't suck (hopefully).
 
 Let's work together.
 **[View my resume](/resume.pdf)**

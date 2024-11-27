@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  --primary-color: rgb(26, 106, 211);
+  --primary-color: rgb(230, 116, 10);
   --background-color: white;
+  --foreground: #3c393f;
+  --muted-foreground: #8d8d91;
 }
 
 * {
@@ -11,7 +13,7 @@
 
 body {
   background: var(--background-color);
-  color: black;
+  color: var(--foreground);
   font-family: "Noto Sans", sans-serif;
   font-optical-sizing: auto;
   padding: 0;
@@ -19,7 +21,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  line-height: 1.8rem;
+  line-height: 1.4rem;
 }
 
 header {
@@ -35,33 +37,40 @@ strong {
   color: var(--primary-color);
 }
 
-header > h1 {
-  margin: 0;
-}
-
 h1,
 h2,
-h3 {
-  margin: 16px 0;
+h3,
+h4,
+h5,
+h6 {
+  color: black;
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 800;
+  margin: 12px 0;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
+  margin: 8px 0;
 }
 
 h3 {
   font-size: 18px;
   font-weight: 600;
+  margin: 4px 0;
 }
 
 p {
-  margin: 16px 0;
+  margin: 12px 0;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: var(--muted-foreground);
 }
 
 .nav-wrapper {
@@ -75,7 +84,8 @@ p {
 
 main {
   width: clamp(300px, 60vw, 720px);
-  min-height: 74vh;
+  min-height: 82vh;
+  padding-top: 16px;
 }
 
 a {
@@ -84,8 +94,8 @@ a {
 }
 
 section {
-  padding: 16px 0;
-  border-bottom: 1px solid #d1d1d1;
+  padding-bottom: 16px;
+  /* border-bottom: 1px solid #d1d1d1; */
 }
 
 .section-heading {
@@ -108,6 +118,15 @@ section {
 
 .page-content {
   margin: 12px 0;
+}
+
+.content-heading {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--muted-foreground);
+  margin-bottom: -12px;
 }
 
 footer {
