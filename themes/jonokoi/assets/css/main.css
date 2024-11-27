@@ -23,9 +23,11 @@ body {
 }
 
 header {
-  width: clamp(300px, 50vw, 750px);
-  padding-top: 40px;
-  /* margin-bottom: 12px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: clamp(300px, 60vw, 850px);
+  padding-top: 20px;
 }
 
 strong {
@@ -71,8 +73,9 @@ p {
 }
 
 main {
-  width: clamp(300px, 50vw, 750px);
-  min-height: 79vh;
+  margin-top: 60px;
+  width: clamp(300px, 60vw, 850px);
+  min-height: 74vh;
 }
 
 a {
@@ -97,7 +100,7 @@ footer {
   text-align: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 960px) {
   main,
   header {
     width: 100%;
@@ -106,5 +109,14 @@ footer {
 
   header {
     margin-top: 20px;
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .nav-wrapper {
+    gap: 12px;
+    flex-wrap: wrap;
   }
 }
