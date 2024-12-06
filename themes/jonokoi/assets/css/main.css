@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  --primary-color: rgb(230, 116, 10);
-  --background-color: white;
-  --foreground: #3c393f;
+  --primary-color: rgb(243, 64, 118);
+  --background-color: rgb(5, 5, 5);
+  --foreground: #d6d6d6;
   --muted-foreground: #8d8d91;
 }
 
@@ -30,7 +30,6 @@ header {
   justify-content: space-between;
   width: clamp(300px, 60vw, 720px);
   padding-top: 20px;
-  border-bottom: 1px solid #d1d1d1;
 }
 
 strong {
@@ -43,7 +42,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: black;
+  color: white;
 }
 
 h1 {
