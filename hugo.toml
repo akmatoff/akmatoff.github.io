@@ -4,6 +4,8 @@ title = 'Azim Akmatov'
 
 theme = 'jonokoi'
 
+timezone = 'Asia/Bishkek'
+
 [[menus.main]]
 name = 'Home'
 pageRef = '/'
