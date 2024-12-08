@@ -3,6 +3,7 @@
 {{ .Content }}
 {{ range .Pages }}
 <h3><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
+<span class="subtitle">{{ .Date.Format "January 2, 2006" }}</span>
 <p>
     {{ .Summary }}
 </p>
