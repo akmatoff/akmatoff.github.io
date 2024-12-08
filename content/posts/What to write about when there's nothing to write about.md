@@ -2,6 +2,7 @@
 title: What to write about when you don't know what to write about?
 date: 2024-12-09
 draft: false
+tags: ["personal"]
 summary: When you don't know what to write about, why not write just about that?
 ---
 
