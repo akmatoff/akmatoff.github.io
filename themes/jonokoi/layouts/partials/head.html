@@ -7,7 +7,7 @@
 {{- end }}
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
 
-{{ partial "head/googleAnalytics.html" }}
+{{ partial "head/googleAnalytics.html" . }}
 {{ partial "head/og.html" . }}
 {{ partialCached "head/css.html" . }}
 {{ partialCached "head/js.html" . }}
