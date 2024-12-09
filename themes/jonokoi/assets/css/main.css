@@ -3,8 +3,8 @@
 :root {
   --primary-color: rgb(243, 64, 118);
   --background-color: rgb(5, 5, 5);
-  --foreground: #d6d6d6;
-  --muted-foreground: #8d8d91;
+  --foreground: #d4d4d4;
+  --muted-foreground: #818185;
 }
 
 * {
@@ -21,7 +21,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  line-height: 1.8rem;
+  line-height: 1.9rem;
 }
 
 header {
@@ -49,23 +49,23 @@ h6 {
 h1 {
   font-size: 26px;
   font-weight: 800;
-  margin: 12px 0;
+  margin: 16px 0;
 }
 
 h2 {
   font-size: 22px;
   font-weight: 700;
-  margin: 8px 0;
+  margin: 12px 0;
 }
 
 h3 {
   font-size: 18px;
   font-weight: 600;
-  margin: 4px 0;
+  margin: 6px 0;
 }
 
 p {
-  margin: 12px 0;
+  margin: 16px 0;
 }
 
 .subtitle {
@@ -99,7 +99,8 @@ section {
 }
 
 pre {
-  padding: 8px;
+  padding: 8px 16px;
+  border-radius: 16px;
 }
 
 .section-heading {
@@ -119,6 +120,17 @@ pre {
   height: 26px;
   transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
+
+.post-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.reading-time {
+  font-size: 12px;
+}
+
 .page-content {
   margin: 12px 0;
 }
@@ -143,9 +155,9 @@ pre {
 }
 
 .card {
-  background: #141414;
-  padding: 8px 16px;
-  border-radius: 12px;
+  background: #242230;
+  padding: 2px 12px;
+  border-radius: 16px;
 }
 
 .tag {
