@@ -5,9 +5,11 @@ title = 'Azim Akmatov'
 theme = 'jonokoi'
 
 timezone = 'Asia/Bishkek'
+enableRobotsTXT = true
 
 [params]
 googleAnalytics = 'G-FTDQNX4K6B'
+description = 'A software developer, musician and just a guy who is looking for himself and sharing some of his journey with the world.'
 
 [[menus.main]]
 name = 'Home'

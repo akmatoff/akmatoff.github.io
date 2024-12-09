@@ -1,0 +1,22 @@
+{{- if .IsHome -}}
+<meta name="og:title" content="{{ .site.Title }}">
+<meta property="og:type" content="website">
+<meta property="og:description" content="{{ .site.Params.Description }}">
+<meta property="og:url" content="{{ .site.BaseUrl }}">
+{{- else -}}
+<meta name="og:title" content="{{ .Page.Title }}">
+{{- if isset .Params.og_type -}}
+<meta property="og:type" content="{{ .Params.og_type }}" />
+{{- else -}}
+<meta property="og:type" content="website" />
+{{- end -}}
+<meta property="og:description" content="{{ .Params.Description }}" />
+<meta property="og:url" content="{{ .Page.Permalink }}" />
+{{- if isset .Params.Featured_image -}}
+<meta name="og:image/" content="{{ .Params.Featured_image }}" />
+<meta name="twitter:image" content="{{ .Params.Featured_image }}" />
+{{- else -}}
+<meta name="og:image" content="{{ .site.Params.Image }}" />
+<meta name="twitter:image" content="{{ .site.Params.Image }}" />
+{{- end -}}
+{{- end -}}
