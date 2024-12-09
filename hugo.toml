@@ -6,6 +6,9 @@ theme = 'jonokoi'
 
 timezone = 'Asia/Bishkek'
 
+[params]
+googleAnalytics = 'G-FTDQNX4K6B'
+
 [[menus.main]]
 name = 'Home'
 pageRef = '/'
