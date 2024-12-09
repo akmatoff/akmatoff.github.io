@@ -6,18 +6,19 @@ description: I added my mother language to monkeytype which is a speed typing pl
 tags:
   - personal
   - open-source
-  - speed-typing
-  - dev
+  - speed typing
+  - development
 ---
-Do you spend a lot of time improving your speed typing? Here is how I added a mark on my favorite typing platform. 
 
-I'm a big fan of typing on my keyboard which led me to discover [monkeytype](https://monkeytype.com) which is my favorite speed typing test platform. 
+Do you spend a lot of time improving your speed typing? Here is how I added a mark on my favorite typing platform.
+
+I'm a big fan of typing on my keyboard which led me to discover [monkeytype](https://monkeytype.com) which is my favorite speed typing test platform.
 
 I used to learn touch typing on [keybr](https://keybr.com) and [10fastfingers](https://10fastfingers.com). After mastering that skill on these platforms, I discovered Monkeytype, where I could make my little contribution.
 
-After spending a lot of time on that website, I realized I could contribute by adding my language. I quickly tried to figure out how I could contribute to this project by checking their documentations on their github repository. 
+After spending a lot of time on that website, I realized I could contribute by adding my language. I quickly tried to figure out how I could contribute to this project by checking their documentations on their github repository.
 
-## Have you ever thought about adding your language which might not exist to Monkeytype ? Here is how. 
+## Have you ever thought about adding your language which might not exist to Monkeytype ? Here is how.
 
 Adding a new language is very simple - you just add a `JSON` file with a specific structure named as your language and include it in the `_list.json` file.
 
@@ -26,6 +27,7 @@ Before that, we need to fork the [monkeytype repository](https://github.com/monk
 Then, create a new JSON file in `./frontend/static/languages/`, named as the language name and the number of words, e.g `kyrgyz_1k.json`. If there are less than 1000 words, simply add the language name, e.g `kyrgyz.json`.
 
 `kyrgyz.json`
+
 ```json
 {
 	"name": "kyrgyz",
@@ -43,8 +45,8 @@ In addition to this, you have to add your language to the `_groups.json` and `_l
 
 ```json
 {
-"name": "kyrgyz",
-"languages": ["kyrgyz", "kyrgyz_1k"]
+  "name": "kyrgyz",
+  "languages": ["kyrgyz", "kyrgyz_1k"]
 }
 ```
 
@@ -64,7 +66,7 @@ Just click the `contribute` button
 
 ![contribute](https://user-images.githubusercontent.com/83455454/149186637-66dae488-05ae-45c4-9217-65bc36c4927b.png)
 
-After the pull request gets merged new language is available on the website. 
+After the pull request gets merged new language is available on the website.
 
 Make sure your contribution follows the language guidelines - [Language Guidelines](https://github.com/monkeytypegame/monkeytype/blob/master/docs/CONTRIBUTING.md#language-guidelines)
 
@@ -72,4 +74,4 @@ More info on how to contribute - [Language Contribution](https://github.com/monk
 
 Doing all of that is not a big deal, but I wanted my language to be on this platform where I spend time whenever I wait for something loading.
 
-Here is my [profile](https://monkeytype.com/profile/akmatoff) on monkeytype if you're interested. 
+Here is my [profile](https://monkeytype.com/profile/akmatoff) on monkeytype if you're interested.
