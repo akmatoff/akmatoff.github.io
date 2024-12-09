@@ -15,5 +15,7 @@
 
     gtag('config', '{{ .Site.Params.googleAnalytics }}');
 </script>
+
+{{ partial "head/og.html" . }}
 {{ partialCached "head/css.html" . }}
 {{ partialCached "head/js.html" . }}
