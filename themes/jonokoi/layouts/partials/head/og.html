@@ -1,7 +1,7 @@
 {{- if .IsHome -}}
 <meta name="og:title" content="{{ site.Title }}">
 <meta property="og:type" content="website">
-<meta property="og:description" content="{{ site.Params.Description | default site.Params.Description }}">
+<meta property="og:description" content="{{ site.Params.Description }}">
 <meta property="og:url" content="{{ site.BaseURL }}">
 {{- else -}}
 <meta name="og:title" content="{{ .Page.Title }}">
@@ -10,7 +10,7 @@
 {{- else -}}
 <meta property="og:type" content="website" />
 {{- end -}}
-<meta property="og:description" content="{{ .Params.Description }}" />
+<meta property="og:description" content="{{ .Params.Description | default site.Params.Description }}" />
 <meta property="og:url" content="{{ .Page.Permalink }}" />
 {{- with .Params.Featured_image -}}
 <meta property="og:image/" content="{{ .Params.Featured_image }}" />

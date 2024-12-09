@@ -22,7 +22,7 @@ pageRef = '/about'
 weight = 20
 
 [[menus.main]]
-name = 'Writings'
+name = 'Posts'
 pageRef = '/posts'
 weight = 30
 

@@ -14,7 +14,7 @@
 <section id="posts">
   <div class="section-heading">
     {{/* <img src="/icons/pen.svg" width="26" height="26"> */}}
-    <h1>Writings</h1>
+    <h1>Posts</h1>
   </div>
   {{ range where site.RegularPages "Type" "==" "posts" }}
   <h3><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>

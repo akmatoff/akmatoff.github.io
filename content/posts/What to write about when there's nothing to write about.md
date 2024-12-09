@@ -2,8 +2,8 @@
 title: What to write about when you don't know what to write about?
 date: 2024-12-09
 draft: false
-tags: ["personal"]
-summary: When you don't know what to write about, why not write just about that?
+tags: ["personal", "self-improvement", "writing"]
+description: When you don't know what to write about, why not write just about that?
 ---
 
 That's the question that popped into my head when I thought about starting a blog, and it became my first topic.
