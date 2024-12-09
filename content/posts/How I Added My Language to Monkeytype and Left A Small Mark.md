@@ -21,7 +21,9 @@ After spending a lot of time on that website, I realized I could contribute by a
 
 Adding a new language is very simple - you just add a `JSON` file with a specific structure named as your language and include it in the `_list.json` file.
 
-Create a new JSON file in `./frontend/static/languages/`, named as the language name and the number of words, e.g `kyrgyz_1k.json`. If there are less than 1000 words, simply add the language name, e.g `kyrgyz.json`.
+Before that, we need to fork the [monkeytype repository](https://github.com/monkeytypegame/monkeytype).
+
+Then, create a new JSON file in `./frontend/static/languages/`, named as the language name and the number of words, e.g `kyrgyz_1k.json`. If there are less than 1000 words, simply add the language name, e.g `kyrgyz.json`.
 
 `kyrgyz.json`
 ```json
