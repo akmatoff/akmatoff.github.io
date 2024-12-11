@@ -15,7 +15,7 @@
     {{/* <img src="/icons/pen.svg" width="26" height="26"> */}}
     <h1>Posts</h1>
   </div>
-  <div class="list">
+  <div class="posts-grid">
     {{ range where site.RegularPages "Type" "==" "posts" }}
     <div>
       <h3><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
@@ -23,6 +23,8 @@
       <span class="subtitle">{{ .Date.Format $format }}</span>
 
       <p>{{ .Summary }}</p>
+
+      <h4><a href="{{ .RelPermalink }}">Read more</a></h4>
     </div>
     {{ end }}
   </div>

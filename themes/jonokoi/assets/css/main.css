@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-  --primary-color: rgb(243, 64, 118);
-  --background-color: rgb(12, 12, 12);
-  --foreground: #d4d4d4;
+  --primary-color: rgb(255, 255, 255);
+  --background-color: rgb(8, 8, 8);
+  --foreground: #e6e6e6;
   --muted-foreground: #818185;
 }
 
@@ -14,21 +14,20 @@
 body {
   background: var(--background-color);
   color: var(--foreground);
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Poppins", serif;
   font-optical-sizing: auto;
   padding: 0;
   margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  line-height: 1.9rem;
 }
 
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: clamp(300px, 60vw, 720px);
+  width: clamp(300px, 60vw, 630px);
   padding-top: 20px;
   margin-bottom: 24px;
 }
@@ -44,28 +43,32 @@ h4,
 h5,
 h6 {
   color: white;
-}
-
-h1 {
-  font-size: 26px;
-  font-weight: 800;
-  margin: 16px 0;
-}
-
-h2 {
-  font-size: 22px;
-  font-weight: 700;
-  margin: 12px 0;
-}
-
-h3 {
-  font-size: 18px;
-  font-weight: 600;
-  margin: 6px 0;
+  margin: 8px 0;
 }
 
 p {
   margin: 16px 0;
+  line-height: 1.8rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .subtitle {
@@ -83,7 +86,7 @@ p {
 }
 
 main {
-  width: clamp(300px, 60vw, 720px);
+  width: clamp(300px, 60vw, 630px);
   min-height: 82vh;
   padding-top: 16px;
 }
@@ -96,6 +99,12 @@ a {
 section {
   padding-bottom: 16px;
   /* border-bottom: 1px solid #d1d1d1; */
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
 }
 
 pre {
@@ -135,6 +144,21 @@ pre {
   margin: 12px 0;
 }
 
+.content p,
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+  margin: 20px 0;
+}
+
+.content a {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
 .content img {
   max-width: 100%;
 }
@@ -156,18 +180,20 @@ pre {
 
 .card {
   background: #242230;
-  padding: 2px 12px;
+  padding: 4px 10px;
   border-radius: 16px;
 }
 
 .tag {
-  font-size: 12px;
+  font-size: 0.8rem;
+  display: grid;
+  place-content: center;
 }
 
 .list {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 16px;
 }
 
 footer {
@@ -193,5 +219,9 @@ footer {
   .nav-wrapper {
     gap: 12px;
     flex-wrap: wrap;
+  }
+
+  .posts-grid {
+    grid-template-columns: 1fr;
   }
 }

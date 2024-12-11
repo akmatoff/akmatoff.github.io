@@ -6,6 +6,7 @@ theme = 'jonokoi'
 
 timezone = 'Asia/Bishkek'
 enableRobotsTXT = true
+summaryLength = 16
 
 [params]
     googleAnalytics = 'G-FTDQNX4K6B'
