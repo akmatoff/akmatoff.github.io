@@ -1,0 +1,54 @@
+---
+import Header from "../components/Header.astro";
+
+const primary = "#a2ff0b";
+const background = "#050505";
+const content = "#050505";
+const foreground = "#f2f2f2";
+const mutedForeground = "#a5a5a5";
+const border = "#242424";
+---
+
+<style
+  is:global
+  define:vars={{
+    primary,
+    background,
+    content,
+    foreground,
+    mutedForeground,
+    border,
+  }}
+>
+  li {
+    list-style: none;
+  }
+</style>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Azim Akmatov | TypeScript Developer, Music Producer</title>
+  </head>
+  <body class="flex flex-col items-center bg-background text-foreground">
+    <main class="p-4 space-y-4 w-full md:w-5/12 xl:w-[30%]">
+      <div>
+        <div class="bg-content p-4 rounded-md border">
+          <div class="space-y-1">
+            <h1 class="text-3xl font-bold">Azim Akmatov</h1>
+            <p class="text-sm text-muted-foreground">
+              Build web applications and make noise on my computer
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <Header />
+
+      <slot />
+    </main>
+  </body>
+</html>
