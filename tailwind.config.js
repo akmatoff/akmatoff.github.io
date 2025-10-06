@@ -13,6 +13,9 @@ export default {
       borderColor: {
         DEFAULT: "var(--border)",
       },
+      boxShadow: {
+        "sm": "var(--shadow-sm)"
+      }
     },
   },
   plugins: [],

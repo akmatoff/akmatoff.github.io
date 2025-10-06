@@ -19,14 +19,14 @@ export const navbarItems = [
 ];
 ---
 
-<header class="flex items-center justify-between border rounded-md">
-  <nav class="flex">
+<header class="h-screen w-[260px]">
+  <nav class="flex flex-col bg-content rounded-lg p-2 h-full space-y-2">
     {
       navbarItems.map((item) => (
         <li>
           <a
             href={item.link}
-            class="inline-block px-6 py-4 text-lg hover:text-primary duration-300"
+            class="inline-block px-4 py-2 hover:text-primary duration-300 cursor-pointer w-full rounded-md shadow-sm"
           >
             {item.label}
           </a>
