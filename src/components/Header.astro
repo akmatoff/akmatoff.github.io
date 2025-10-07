@@ -19,19 +19,9 @@ export const navbarItems = [
 ];
 ---
 
-<header class="h-screen w-[260px]">
-  <nav class="flex flex-col bg-content rounded-lg p-2 h-full space-y-2">
-    {
-      navbarItems.map((item) => (
-        <li>
-          <a
-            href={item.link}
-            class="inline-block px-4 py-2 hover:text-primary duration-300 cursor-pointer w-full rounded-md shadow-sm"
-          >
-            {item.label}
-          </a>
-        </li>
-      ))
-    }
+<header class="flex items-center space-x-12 p-6">
+  <h1 class="text-4xl/tight">Azim Akmatov</h1>
+  <nav class="flex items-center space-x-8">
+    {navbarItems.map((nav) => <a href={nav.link}>{nav.label}</a>)}
   </nav>
 </header>
