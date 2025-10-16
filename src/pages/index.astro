@@ -1,5 +1,14 @@
 ---
+import ConnectSection from "../components/ConnectSection.astro";
+import ExperienceSection from "../components/ExperienceSection.astro";
+import HeroSection from "../components/HeroSection.astro";
 import RootLayout from "../layouts/RootLayout.astro";
 ---
 
-<RootLayout />
+<RootLayout>
+  <div class="space-y-6">
+    <HeroSection />
+    <ConnectSection />
+    <ExperienceSection />
+  </div>
+</RootLayout>

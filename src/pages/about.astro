@@ -1,0 +1,21 @@
+---
+import { getEntry } from "astro:content";
+import RootLayout from "../layouts/RootLayout.astro";
+import { render } from "astro:content";
+import PageHeader from "../components/PageHeader.astro";
+
+const aboutContent = await getEntry("general", "about");
+
+if (!aboutContent) throw new Error("About content not found");
+
+const { data } = aboutContent;
+const { Content } = await render(aboutContent);
+---
+
+<RootLayout>
+  <article class="content">
+    <PageHeader title={data.title} description={data.description} />
+
+    <Content />
+  </article>
+</RootLayout>

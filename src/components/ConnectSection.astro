@@ -1,0 +1,42 @@
+---
+import { Icon } from "astro-icon/components";
+import PageHeader from "./PageHeader.astro";
+
+const socialLinks = [
+  {
+    id: "github",
+    link: "https://github.com/akmatoff",
+    icon: "ri:github-fill",
+  },
+  {
+    id: "telegram",
+    link: "https://t.me/@azimoffs",
+    icon: "ri:telegram-fill",
+  },
+  {
+    id: "linkedin",
+    link: "https://www.linkedin.com/in/akmatoff/",
+    icon: "ri:linkedin-fill",
+  },
+];
+---
+
+<section>
+  <PageHeader title="Connect" description="Find me on social networks" />
+  <ul class="flex space-x-4">
+    {
+      socialLinks.map((link) => (
+        <li>
+          <a
+            class="text-muted-foreground hover:text-primary duration-300 text-2xl"
+            href={link.link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icon name={link.icon} />
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</section>

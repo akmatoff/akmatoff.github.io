@@ -1,0 +1,47 @@
+---
+import { getCollection } from "astro:content";
+import PageHeader from "./PageHeader.astro";
+
+const experience = await getCollection("experience");
+
+if (!experience) throw new Error("Experience content not found");
+---
+
+<section class="content">
+  <PageHeader title="Experience" description="My work experience" />
+
+  <div class="space-y-8">
+    {
+      experience
+        .sort((a, b) => b.data.startDate.getTime() - a.data.startDate.getTime())
+        .map(async (exp, i) => {
+          const Body = await exp.render();
+
+          return (
+            <div>
+              <div class="flex items-start justify-between">
+                <div>
+                  <h3 class="font-medium">{exp.data.position}</h3>
+                  <p class="text-muted-foreground text-sm">
+                    {exp.data.company}
+                  </p>
+                </div>
+
+                <p class="text-muted-foreground">
+                  {exp.data.startDate.toLocaleDateString("en-US", {
+                    year: "numeric",
+                    month: "long",
+                  })}{" "}
+                  - {exp.data.endDate}
+                </p>
+              </div>
+
+              <article class="mt-2 content">
+                <Body.Content />
+              </article>
+            </div>
+          );
+        })
+    }
+  </div>
+</section>

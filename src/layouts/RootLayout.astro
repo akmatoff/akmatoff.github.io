@@ -1,6 +1,5 @@
 ---
-import Header from "../components/Header.astro";
-
+import Sidebar from "../components/Sidebar.astro";
 import "../main.css";
 ---
 
@@ -8,7 +7,6 @@ import "../main.css";
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="stylesheet" href="../main.css" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>Azim Akmatov | TypeScript Developer, Music Producer</title>
@@ -18,12 +16,22 @@ import "../main.css";
       href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body class="flex flex-col items-center bg-background text-foreground">
-    <main class="p-2 space-y-4 w-full">
-      <Header />
+  <body
+    class="flex flex-col items-center bg-background text-foreground lg:mx-[20%]"
+  >
+    <main class="flex min-h-screen w-full p-2 space-x-2 lg:p-8">
+      <div class="flex-[1_1_0%]">
+        <Sidebar />
+      </div>
 
-      <slot />
+      <div class="flex-[3_1_0%] p-4">
+        <slot />
+      </div>
     </main>
   </body>
 </html>
