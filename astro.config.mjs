@@ -7,4 +7,7 @@ export default defineConfig({
   integrations: [tailwind(), icon()],
   site: "https://akmatoff.cv",
   base: "/",
+  prefetch: {
+    defaultStrategy: "viewport"
+  }
 });

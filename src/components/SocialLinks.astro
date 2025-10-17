@@ -1,21 +1,22 @@
 ---
 import { Icon } from "astro-icon/components";
+import SidebarItem from "./SidebarItem.astro";
 
 const socialLinks = [
   {
-    id: "GitHub",
+    label: "GitHub",
     link: "https://github.com/akmatoff",
     icon: "ri:github-fill",
   },
   {
-    id: "Telegram",
-    link: "https://t.me/@azimoffs",
-    icon: "ri:telegram-fill",
-  },
-  {
-    id: "Linkedin",
+    label: "Linkedin",
     link: "https://www.linkedin.com/in/akmatoff/",
     icon: "ri:linkedin-fill",
+  },
+  {
+    label: "E-mail",
+    link: "mailto:hello@akmatoff.cv",
+    icon: "ri:mail-fill",
   },
 ];
 ---
@@ -27,21 +28,7 @@ const socialLinks = [
     {
       socialLinks.map((link) => (
         <li>
-          <a
-            class="flex items-center justify-between px-4 py-1.5 text-sm rounded-md text-muted-foreground duration-300 transition-all hover:text-primary hover:bg-muted"
-            href={link.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={link.id}
-          >
-            <div class="flex items-center space-x-4">
-              <Icon name={link.icon} class="text-lg" />
-
-              <span>{link.id}</span>
-            </div>
-
-            <Icon name="ri:external-link-fill" class="text-lg" />
-          </a>
+          <SidebarItem nav={link} trailingIcon="ri:arrow-right-s-line" />
         </li>
       ))
     }

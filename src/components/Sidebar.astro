@@ -1,8 +1,10 @@
 ---
-import { Icon } from "astro-icon/components";
-import { clsx } from "clsx";
 import SocialLinks from "./SocialLinks.astro";
-export const navbarItems = [
+import { ClientRouter } from "astro:transitions";
+import type { NavbarItem } from "../types";
+import SidebarItem from "./SidebarItem.astro";
+
+export const navbarItems: NavbarItem[] = [
   {
     label: "Home",
     link: "/",
@@ -24,11 +26,6 @@ export const navbarItems = [
     icon: "ri:code-s-slash-fill",
   },
 ];
-
-const { pathname } = Astro.url;
-
-const isActive = (path: string) =>
-  path === pathname || (path !== "/" && pathname.startsWith(path));
 ---
 
 <aside class="flex flex-col h-full space-y-10 p-3 bg-content shadow-sm text-sm">
@@ -37,22 +34,13 @@ const isActive = (path: string) =>
     <p class="text-muted-foreground text-sm">Frontend developer</p>
   </div>
   <nav class="flex flex-col space-y-2">
-    {
-      navbarItems.map((nav) => (
-        <a
-          class={clsx(
-            "flex items-center text-sm space-x-4 px-4 py-1.5 rounded-md text-muted-foreground duration-300 transition-all hover:text-primary",
-            isActive(nav.link) && "text-primary bg-muted"
-          )}
-          href={nav.link}
-        >
-          <Icon name={nav.icon} />
-
-          <span>{nav.label}</span>
-        </a>
-      ))
-    }
+    <ClientRouter />
+    {navbarItems.map((nav) => <SidebarItem nav={nav} />)}
   </nav>
+
+  <SidebarItem
+    nav={{ label: "Resume", link: "/resume.pdf", icon: "ri:file-text-fill" }}
+  />
 
   <SocialLinks />
 </aside>
