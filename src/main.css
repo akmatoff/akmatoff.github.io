@@ -5,22 +5,26 @@
 @layer base {
   :root {
     --primary: #050505;
-    --background: #ffffff;
+    --background: #fafafa;
     --content: #ffffff;
-    --foreground: #161616;
-    --muted-foreground: #a5a5a5;
+    --muted: #f0f0f0;
+    --foreground: #1f1f1f;
+    --muted-foreground: #818181;
     --border: #242424;
+
+    --shadow-sm: 0 1px 2px #ffffff30, 0 1px 3px #00000020;
   }
 
   .dark {
     --primary: #ffffff;
     --background: #050505;
+    --muted: #313131;
     --content: #161616;
     --foreground: #fafafa;
     --muted-foreground: #bdbdbd;
     --border: #242424;
 
-    --shadow-sm: inset 0 1px 2px #ffffff30, 0 1px 2px #00000015;
+    --shadow-sm: 0 1px 2px #ffffff30, 0 1px 2px #00000015;
   }
 
   body {
@@ -34,7 +38,7 @@
 
   .content li {
     list-style: disc;
-    margin: 8px 0;
+    margin: 8px 20px;
   }
 
   .content > p {

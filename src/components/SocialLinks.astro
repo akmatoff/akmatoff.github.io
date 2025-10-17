@@ -1,0 +1,49 @@
+---
+import { Icon } from "astro-icon/components";
+
+const socialLinks = [
+  {
+    id: "GitHub",
+    link: "https://github.com/akmatoff",
+    icon: "ri:github-fill",
+  },
+  {
+    id: "Telegram",
+    link: "https://t.me/@azimoffs",
+    icon: "ri:telegram-fill",
+  },
+  {
+    id: "Linkedin",
+    link: "https://www.linkedin.com/in/akmatoff/",
+    icon: "ri:linkedin-fill",
+  },
+];
+---
+
+<section class="space-y-4">
+  <h2 class="ml-4">Social</h2>
+
+  <ul class="space-y-2">
+    {
+      socialLinks.map((link) => (
+        <li>
+          <a
+            class="flex items-center justify-between px-4 py-1.5 text-sm rounded-md text-muted-foreground duration-300 transition-all hover:text-primary hover:bg-muted"
+            href={link.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={link.id}
+          >
+            <div class="flex items-center space-x-4">
+              <Icon name={link.icon} class="text-lg" />
+
+              <span>{link.id}</span>
+            </div>
+
+            <Icon name="ri:external-link-fill" class="text-lg" />
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</section>

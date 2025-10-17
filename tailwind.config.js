@@ -9,6 +9,7 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         content: "var(--content)",
+        muted: "var(--muted)",
         "muted-foreground": "var(--muted-foreground)",
       },
       borderColor: {

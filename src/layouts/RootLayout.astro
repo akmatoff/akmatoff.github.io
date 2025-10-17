@@ -21,16 +21,16 @@ import "../main.css";
       rel="stylesheet"
     />
   </head>
-  <body
-    class="flex flex-col items-center bg-background text-foreground lg:mx-[20%]"
-  >
-    <main class="flex min-h-screen w-full p-2 space-x-2 lg:p-8">
-      <div class="flex-[1_1_0%]">
+  <body class="flex flex-col items-center bg-background text-foreground dark">
+    <main class="flex flex-col md:flex-row min-h-screen w-full space-x-2">
+      <div class="fixed top-0 w-80 h-full">
         <Sidebar />
       </div>
 
-      <div class="flex-[3_1_0%] p-4">
-        <slot />
+      <div class="flex flex-1 flex-col items-center p-4">
+        <div class="ml-80 lg:w-[38%] py-20">
+          <slot />
+        </div>
       </div>
     </main>
   </body>

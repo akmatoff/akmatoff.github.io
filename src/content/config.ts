@@ -18,6 +18,7 @@ const experience = defineCollection({
     location: z.string(),
     startDate: z.coerce.date(),
     endDate: z.string(),
+    companyLink: z.string().optional(),
   }),
 });
 

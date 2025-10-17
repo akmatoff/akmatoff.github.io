@@ -8,7 +8,7 @@ description: "Learn a bit more about me"
 Hello, I'm Azim, a web-developer and musician based in
 Kyrgyzstan.
 
-With over 2 years of experience in web development, I specialize
+With 3 years of experience in web development, I specialize
 in React and Next.js.
 
 I have been studying programming since 2018, before I went to
@@ -27,4 +27,4 @@ Currently, I am looking for new opportunities and trying to keep
 improving.
 
 When I'm not programming, I'm producing electronic music
-in various genres and also love playing the guitar
+in various genres and also love playing the guitar.

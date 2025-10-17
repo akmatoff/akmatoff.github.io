@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import PageHeader from "./PageHeader.astro";
+import clsx from "clsx";
 
 const experience = await getCollection("experience");
 
@@ -18,16 +19,22 @@ if (!experience) throw new Error("Experience content not found");
           const Body = await exp.render();
 
           return (
-            <div>
+            <div class="space-y-4">
               <div class="flex items-start justify-between">
                 <div>
-                  <h3 class="font-medium">{exp.data.position}</h3>
-                  <p class="text-muted-foreground text-sm">
+                  <h2 class="font-medium text-lg">{exp.data.position}</h2>
+                  <a
+                    href={exp.data.companyLink || "#"}
+                    class={clsx(
+                      "text-muted-foreground text-sm",
+                      exp.data.companyLink && "underline"
+                    )}
+                  >
                     {exp.data.company}
-                  </p>
+                  </a>
                 </div>
 
-                <p class="text-muted-foreground">
+                <p class="text-muted-foreground text-sm">
                   {exp.data.startDate.toLocaleDateString("en-US", {
                     year: "numeric",
                     month: "long",
