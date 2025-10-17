@@ -16,7 +16,8 @@ export default {
         DEFAULT: "var(--border)",
       },
       boxShadow: {
-        "sm": "var(--shadow-sm)"
+        "sm": "var(--shadow-sm)",
+        "inner-sm": "var(--shadow-inner-sm)"
       }
     },
   },
