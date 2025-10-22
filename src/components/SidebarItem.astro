@@ -22,6 +22,7 @@ const isActive = (path: string) =>
     isActive(nav.link) && "text-primary bg-muted"
   )}
   href={nav.link}
+  target={nav.isTargetBlank ? "_blank" : "_self"}
 >
   <Icon name={nav.icon} />
 

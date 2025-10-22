@@ -1,15 +1,17 @@
 ---
 title: "From Tutorials to Production: How I Learn Real-World Software Engineering"
-date: 10-22-2025 
+description: "Most of the content we learn seems quite basic - we need to learn much more."
+date: 10-22-2025
 draft: false
 ---
+
 Tutorials teach the basics. Real-world software teaches you how messy things really are.
 
-**Real apps are messy.**  
+**Real apps are messy.**
 
-- Migrations fail.  
-- Caches misbehave.  
-- Dependencies conflict.  
+- Migrations fail.
+- Caches misbehave.
+- Dependencies conflict.
 - Local tests pass, production fails.
 
 Tutorials don’t prepare you for this—but experience does.
@@ -35,10 +37,10 @@ AI isn’t for copy-pasting solutions. I use it to **explore ideas, test approac
 
 I mainly work with **TypeScript**, with some experience in **Python**. I’ve touched **frontend, backend, infrastructure, databases, DevOps, and product management**. Every messy project reinforces that software engineering is vast, complex, and constantly evolving.
 
-The difference between junior and senior developers isn’t just knowing tools—it’s:  
+The difference between junior and senior developers isn’t just knowing tools—it’s:
 
-- **Depth of understanding**  
-- **Curiosity**  
+- **Depth of understanding**
+- **Curiosity**
 - **Questioning assumptions**
 
 Every bug, system quirk, and messy piece of code is an opportunity to learn.

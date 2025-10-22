@@ -1,13 +1,26 @@
 ---
+import { Icon } from "astro-icon/components";
+
 type Props = {
   title: string;
   description?: string;
+  backLink?: string;
 };
 
-const { title, description } = Astro.props;
+const { title, description, backLink } = Astro.props;
 ---
 
 <div class="mb-6">
+  {
+    backLink && (
+      <a
+        class="bg-content rounded-full grid place-content-center p-1 mb-8 w-fit"
+        href={backLink}
+      >
+        <Icon name="ri:arrow-drop-left-line" class="text-4xl" />
+      </a>
+    )
+  }
   <h1 class="text-2xl font-medium">{title}</h1>
   {description && <p class="text-muted-foreground">{description}</p>}
 </div>

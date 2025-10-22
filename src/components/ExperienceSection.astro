@@ -8,7 +8,7 @@ const experience = await getCollection("experience");
 if (!experience) throw new Error("Experience content not found");
 ---
 
-<section class="content">
+<section>
   <PageHeader title="Experience" description="My work experience" />
 
   <div class="space-y-8">
@@ -19,7 +19,7 @@ if (!experience) throw new Error("Experience content not found");
           const Body = await exp.render();
 
           return (
-            <div class="space-y-4">
+            <div>
               <div class="flex items-start justify-between">
                 <div>
                   <h2 class="font-medium text-lg">{exp.data.position}</h2>

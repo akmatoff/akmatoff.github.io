@@ -1,0 +1,37 @@
+---
+import { Icon } from "astro-icon/components";
+import { format } from "date-fns";
+
+type Props = {
+  note: any;
+};
+
+const { note } = Astro.props;
+---
+
+<a class="block" href={`/notes/${note.slug}`}>
+  <div class="space-y-4 bg-content rounded-md p-4">
+    {
+      note.data.image ? (
+        <img src={note.data.image} alt={note.data.title} />
+      ) : (
+        <div class="bg-background h-64 rounded-lg grid place-content-center">
+          <Icon
+            name="ri:folder-image-line"
+            class="text-muted-foreground text-4xl"
+          />
+        </div>
+      )
+    }
+    <div class="space-y-2">
+      <h3 class="font-bold text-sm">{note.data.title}</h3>
+      <p class="text-xs text-muted-foreground">
+        {note.data.description}
+      </p>
+    </div>
+    <div class="flex items-center space-x-2 text-sm text-muted-foreground">
+      <Icon name="ri:calendar-fill" />
+      <p>{format(note.data.date, "PPP")}</p>
+    </div>
+  </div>
+</a>
