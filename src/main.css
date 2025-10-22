@@ -19,8 +19,8 @@
   .dark {
     --primary: #ffffff;
     --background: #050505;
-    --muted: #313131;
-    --content: #161616;
+    --muted: #1d1d1d;
+    --content: #111111;
     --foreground: #fafafa;
     --muted-foreground: #bdbdbd;
     --border: #242424;
@@ -46,5 +46,45 @@
   .content > p {
     margin: 14px 0;
     line-height: 2rem;
+  }
+
+  .content hr {
+    margin: 24px 0;
+  }
+
+  .content h1 {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  .content h2 {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+
+  .content h3 {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+
+  .content h4 {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+
+  .content h2,
+  .content h3,
+  .content h4 {
+    margin: 16px 0;
+    font-weight: bold;
+  }
+
+  .content pre {
+    padding: 16px;
+    border-radius: 8px;
+  }
+
+  .content a {
+    @apply underline;
   }
 }

@@ -1,0 +1,39 @@
+---
+import { getCollection } from "astro:content";
+import PageHeader from "../../components/PageHeader.astro";
+import RootLayout from "../../layouts/RootLayout.astro";
+import { format } from "date-fns";
+import { Icon } from "astro-icon/components";
+
+const notes = await getCollection("notes");
+---
+
+<RootLayout>
+  <section>
+    <PageHeader
+      title="Notes"
+      description="Trying to remember and share my knowledge and experience"
+    />
+
+    <div class="space-y-2">
+      {
+        notes.map((note) => (
+          <a class="block" href={`/notes/${note.slug}`}>
+            <div class="space-y-4 bg-content rounded-md p-4">
+              <div>
+                <h3 class="font-bold">{note.data.title}</h3>
+                <p class="text-sm text-muted-foreground">
+                  {note.data.description}
+                </p>
+              </div>
+              <div class="flex items-center space-x-2 text-sm text-muted-foreground">
+                <Icon name="ri:calendar-fill" />
+                <p>{format(note.data.date, "PPP")}</p>
+              </div>
+            </div>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+</RootLayout>

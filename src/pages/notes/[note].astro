@@ -1,0 +1,32 @@
+---
+import { getCollection, getEntry } from "astro:content";
+import RootLayout from "../../layouts/RootLayout.astro";
+
+const { note } = Astro.params;
+
+if (!note) throw new Error("Note not found");
+
+const noteContent = await getEntry("notes", note);
+
+if (!noteContent) throw new Error("Note content not found");
+
+const { data } = noteContent;
+
+const { Content } = await noteContent.render();
+
+export async function getStaticPaths() {
+  const notes = await getCollection("notes");
+
+  return notes.map((note) => ({
+    params: { note: note.slug },
+  }));
+}
+---
+
+<RootLayout>
+  <section class="content">
+    <h1 class="font-bold text-lg">{data.title}</h1>
+
+    <Content />
+  </section>
+</RootLayout>
